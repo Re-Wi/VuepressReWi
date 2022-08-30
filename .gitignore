@@ -102,3 +102,58 @@ dist
 
 # TernJS port file
 .tern-port
+
+node_modules
+
+.temp/
+.cache/
+docs/.vuepress/dist/
+docs/.vuepress/public/images
+*.exe
+*.cpp
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# VuePress files
+docs/.vuepress/.temp/
+docs/.vuepress/.cache/
+docs/.vuepress/dist/
+
+# Dist files
+lib/
+
+# Test temp files
+**/__fixtures__/.temp/
+
+# Test coverage files
+coverage/
+
+# Node modules
+node_modules/
+
+# MacOS Desktop Services Store
+.DS_Store
+
+
+
+# Typescript build info
+*.tsbuildinfo
