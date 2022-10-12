@@ -10,7 +10,7 @@
     "dev": "vuepress dev . --temp .temp  --cache .cache",
     "start": "vuepress dev . --temp .temp --cache .cache",
     "build": "vuepress build . --temp .temp --cache .cache",
-    "deploy": "bash deploy.sh"
+    "deploy": "bash scripts/deploy.sh"
   },
   "dependencies": {
     "vuepress": "2.0.0-beta.51",

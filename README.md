@@ -59,11 +59,11 @@ theme-cli init
 
 ## 把项目从gitee上克隆下来
 
-git clone git@github.com:RejoiceWindow/vuepress-rewi.git
+git clone git@github.com:Re-Wi/VuepressReWi.git
 
 ## 进入项目目录
 
-cd vuepress-rewi
+cd VuepressReWi
 
 ## 安装依赖
 
