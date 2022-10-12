@@ -1,19 +1,16 @@
 import { defineUserConfig } from 'vuepress'
-import { defaultTheme } from '@vuepress/theme-default'
-import { pwaPlugin } from '@vuepress/plugin-pwa'
-import { pwaPopupPlugin } from '@vuepress/plugin-pwa-popup'
-import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
+import type { DefaultThemeOptions } from 'vuepress'
+import recoTheme from 'vuepress-theme-reco'
+
 export default defineUserConfig({
-  base: '/', // 这是部署到github相关的配置
   title: '学习&交流-怿窗的博客',
   description: '怿窗の博客',
-  // port: '8080',
   head: [// 注入到当前页面的 HTML <head> 中的标签
     ['link', { rel: 'icon', href: '/icons/favicon.ico' }],// 增加一个自定义的 favicon(网页标签的图标)
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
     ["meta", { name: "robots", content: "all" }],
     ["meta", { name: "author", content: "RejoiceWindow" }],
-    ['meta', { name: 'keywords', content: '怿窗,rejoicewindow,vuepress,全栈' }],
+    ['meta', { name: 'keywords', content: '怿窗,rejoicewindow,vuepress,全栈,ReWi,前端,后端,编程' }],
     ['link', {
       rel: 'icon',
       type: 'image/png',
@@ -61,11 +58,14 @@ export default defineUserConfig({
       title: '怿窗◕‿◕博客',
     },
   },
-  theme: defaultTheme({
-    // 默认主题配置
+  theme: recoTheme({
+    style: '@vuepress-reco/style-default',
     logo: '/favicon.ico',
-    repo: 'RejoiceWindow/vuepress-rewi',
+    author: 'ReWi',
+    docsRepo: 'https://github.com/Re-Wi/VuepressReWi.git',
+    docsBranch: 'main',
     docsDir: 'docs',
+    lastUpdatedText: '',
     // theme-level locales config
     locales: {
       /**
@@ -76,6 +76,8 @@ export default defineUserConfig({
        */
       '/en/': {
         selectLanguageName: 'English',
+        selectLanguageText: 'Select Language',
+        selectLanguageAriaLabel: 'Select Language',
         // page meta
         editLinkText: 'Edit this page on GitHub',
       },
@@ -98,7 +100,6 @@ export default defineUserConfig({
         editLinkText: '在 GitHub 上编辑此页',
         lastUpdatedText: '上次更新',
         contributorsText: '贡献者',
-
         // custom containers
         tip: '提示',
         warning: '注意',
@@ -117,30 +118,96 @@ export default defineUserConfig({
         toggleSidebar: '切换侧边栏',
       },
     },
+    // series 为原 sidebar
+    series: {
+      '/docs/theme-reco/': [
+        {
+          text: 'module one',
+          children: ['home', 'theme']
+        },
+        {
+          text: 'module two',
+          children: ['api', 'plugin']
+        }
+      ]
+    },
+    navbar:
+      [
+        { text: 'Home', link: '/' },
+        { text: 'Categories', link: '/categories/reco/1/' },
+        { text: 'Tags', link: '/tags/tag1/1/' },
+        {
+          text: 'Docs',
+          children: [
+            { text: 'vuepress-reco', link: '/docs/theme-reco/theme' },
+            { text: 'vuepress-theme-reco', link: '/blogs/other/guide' }
+          ]
+        },
+      ],
+    bulletin: {
+      body: [
+        {
+          type: 'text',
+          content: `🎉🎉🎉 reco 主题 2.x 已经接近 Beta 版本，在发布 Latest 版本之前不会再有大的更新，大家可以尽情尝鲜了，并且希望大家在 QQ 群和 GitHub 踊跃反馈使用体验，我会在第一时间响应。`,
+          style: 'font-size: 12px;'
+        },
+        {
+          type: 'hr',
+        },
+        {
+          type: 'title',
+          content: 'QQ 群',
+        },
+        {
+          type: 'text',
+          content: `
+          <ul>
+            <li>QQ群1：1037296104</li>
+            <li>QQ群2：1061561395</li>
+            <li>QQ群3：962687802</li>
+          </ul>`,
+          style: 'font-size: 12px;'
+        },
+        {
+          type: 'hr',
+        },
+        {
+          type: 'title',
+          content: 'GitHub',
+        },
+        {
+          type: 'text',
+          content: `
+          <ul>
+            <li><a href="https://github.com/vuepress-reco/vuepress-theme-reco-next/issues">Issues<a/></li>
+            <li><a href="https://github.com/vuepress-reco/vuepress-theme-reco-next/discussions/1">Discussions<a/></li>
+          </ul>`,
+          style: 'font-size: 12px;'
+        },
+        {
+          type: 'hr',
+        },
+        {
+          type: 'buttongroup',
+          children: [
+            {
+              text: '打赏',
+              link: '/docs/others/donate.html'
+            }
+          ]
+        }
+      ],
+    },
+    // valineConfig 配置与 1.x 一致
+    // valineConfig: {
+    //   appId: 'xxx',
+    //   appKey: 'xxx',
+    //   placeholder: '填写邮箱可以收到回复提醒哦！',
+    //   verify: true, // 验证码服务
+    //   // notify: true,
+    //   recordIP: true,
+    //   // hideComments: true // 隐藏评论
+    // },
   }),
-  plugins: [
-    // 本地插件
-    // [path.resolve(__dirname, './plugins/vuepress-plugin-bulletin-popover/index.js')],
-    // require('./another-plugin'),   
-    backToTopPlugin(),
-    pwaPlugin({
-      // 配置项
-      // 在新的 Service Worker 就绪之后立即激活它
-      skipWaiting: true,
-    }),
-    pwaPopupPlugin({
-      // 配置项
-      // 没有指定该配置项，它会降级使用默认信息。
-      locales: {
-        '/': {
-          message: 'New content is available.',
-          buttonText: 'Refresh',
-        },
-        '/zh/': {
-          message: '发现新内容可用',
-          buttonText: '刷新',
-        },
-      },
-    }),
-  ],
+  // debug: true,
 })

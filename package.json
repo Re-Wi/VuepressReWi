@@ -1,37 +1,24 @@
 {
   "name": "vuepress-rewi",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "怿窗の博客",
   "main": "index.js",
+  "repository": "git@github.com:Re-Wi/VuepressReWi.git",
+  "author": "ReWi <RejoiceWindow@yeah.net>",
+  "license": "MIT",
   "scripts": {
-    "dev": "vuepress dev docs  --temp .temp  --cache .cache",
-    "build": "vuepress build docs  --temp .temp --cache .cache",
-    "deploy": "bash deploy.sh",
-    "lint-md": "yarn lint-md:style && yarn lint-md:wording",
-    "lint-md:style": "remark --quiet --frail .",
-    "lint-md:wording": "textlint ./docs/**/*.md",
-    "show-help": "vuepress --help",
-    "view-info": "vuepress view-info docs --temp .temp"
+    "dev": "vuepress dev . --temp .temp  --cache .cache",
+    "start": "vuepress dev . --temp .temp --cache .cache",
+    "build": "vuepress build . --temp .temp --cache .cache",
+    "deploy": "bash deploy.sh"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://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@github.com/RejoiceWindow/vuepress-rewi.git"
+  "dependencies": {
+    "vuepress": "2.0.0-beta.51",
+    "vuepress-theme-reco": "2.0.0-beta.41"
   },
   "keywords": [
     "RejoiceWindow",
     "ReWi",
     "怿窗"
-  ],
-  "author": "RejoiceWindow",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/RejoiceWindow/vuepress-rewi/issues"
-  },
-  "homepage": "https://github.com/RejoiceWindow/vuepress-rewi#readme",
-  "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^2.0.0-beta.51",
-    "@vuepress/plugin-pwa": "^2.0.0-beta.51",
-    "@vuepress/plugin-pwa-popup": "^2.0.0-beta.51",
-    "vuepress": "^2.0.0-beta.51"
-  }
+  ]
 }
