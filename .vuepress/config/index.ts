@@ -13,7 +13,7 @@ export const themeConfig = {
             lastUpdatedText: '最后更新时间',
             navbar: zhConfig.navbar,
             series: zhConfig.series,
-            // commentConfig: zhConfig.commentConfig,
+            commentConfig: zhConfig.commentConfig,
             bulletin: zhConfig.bulletin,
             // page meta
             // editLinkText: '在 GitHub 上编辑此页',
@@ -29,21 +29,22 @@ export const themeConfig = {
             selectLanguageName: 'English',
             navbar: enConfig.navbar,
             series: enConfig.series,
-            // commentConfig: enConfig.commentConfig,
+            commentConfig: enConfig.commentConfig,
             bulletin: enConfig.bulletin,
             // page meta
             //    editLinkText: 'Edit this page on GitHub',
         }
     },
-    // style: '@vuepress-reco/style-default',
+    style: '@vuepress-reco/style-default',
     logo: '/favicon.ico',
     author: 'ReWi',
     docsRepo: 'https://github.com/Re-Wi/VuepressReWi.git',
     docsBranch: 'main',
     docsDir: 'docs',
+    //lastUpdatedText: '',
     // vuePreviewsDir: './docs/.vuepress/vue-previews',
     // componentsDir: './docs/.vuepress/components',
-    
+
     // valineConfig 配置与 1.x 一致
     // valineConfig: {
     //   appId: 'xxx',

@@ -1,9 +1,20 @@
 ---
 home: true
 modules:
+  - Banner
   - BannerBrand
   - MdContent
   - Footer
+banner: # banner 模块的配置
+  heroText: 学习并快乐着
+  tagline: Enjoy when you can, and endure when you must.
+  heroImage: /logo.png
+  heroImageStyle:
+    maxWidth: 200px
+    margin: 0 auto 2rem
+  bgImage: /img/hero.png
+  bgImageStyle:
+    height: 450px
 bannerBrand:
   heroImage: /logo.png
   heroImageStyle:
@@ -28,6 +39,12 @@ features:
   details: 帮助更多的朋友节省时间去用心书写内容，而不是仅仅配置一个博客去孤芳自赏。
 - title: 未来
   details: 吸引更多的朋友参与到开发中来，继续强大功能。
+footer: # 底部模块的配置
+  record: 域名备案文案
+  recordLink: https://rewi.cc/
+  cyberSecurityRecord: 公安备案文案
+  cyberSecurityLink: 公安备案地址
+  startYear: 2018
 ---
 
 ## 快速开始
