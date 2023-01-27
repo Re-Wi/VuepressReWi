@@ -1,31 +1,24 @@
 export const navbar = [
-  { text: '指南', link: '/docs/guide/introduce', icon: 'HandClick' },
-  { text: '参考', icon: 'FileInvoice',
+  { text: '主页', link: '/' },
+  { text: '分类', link: '/categories/category1/1/' },
+  { text: '标签', link: '/tags/tag1/1/' },
+  { text: '文档',
     children: [
-      {
-        text: '主题配置',
-        children: [
-          { text: '基础', link: '/docs/theme/introduce' },
-          { text: '高级', link: '/docs/theme/home' }
-        ]
-      },
-      {
-        text: '内置插件',
-        children: [
-          { text: 'page', link: '/docs/plugins/page' },
-          { text: 'comments', link: '/docs/plugins/comments' },
-          { text: 'vue-previews', link: '/docs/plugins/vue-previews' },
-          { text: 'bulletin-popover', link: '/docs/plugins/bulletin-popover' }
-        ]
-      }
+      { text: 'vuepress-reco', link: '/docs/theme-reco/theme' },
+      { text: 'vuepress-theme-reco', link: '/blogs/other/guide' }
+    ]
+  },
+  { text: '博客',
+    children: [
+      { text: '开发者', link: '/blogs/developer/' },
+      { text: '关于我', link: '/blogs/person/' }
     ]
   },
   {
     text: '版本',
     icon: 'Versions',
     children: [
-      { text: '2.x(alpha)', link: 'http://v2.vuepress-reco.recoluan.com/' },
-      { text: '1.x', link: 'https://vuepress-theme-reco.recoluan.com/views/1.x/' },
+      { text: '0.x.x', link: 'https://rewi.cc/' },
     ],
   },
   { text: '留言板', link: '/docs/message-board', icon: 'Message2' },

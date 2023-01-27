@@ -2,15 +2,24 @@ export const bulletin = {
   title: 'Bulletin',
   body: [
     {
+      type: 'text',
+      content: `加入QQ群blblblblblbblblblbla`,
+      style: 'font-size: 12px;'
+    },
+    {
+      type: 'hr',
+    },
+    {
       type: 'title',
-      content: 'QQ Group',
+      content: 'QQ 群',
     },
     {
       type: 'text',
       content: `
       <ul>
       <li>1057492554 (Computer technology small white exchange area)</li>
-      </ul>`,
+      </ul>
+      `,
       style: 'font-size: 12px;'
     },
     {
@@ -26,7 +35,8 @@ export const bulletin = {
       <ul>
       <li><a href="https://github.com/Re-Wi/VuepressReWi/issues">Issues<a/></li>
       <li><a href="https://github.com/Re-Wi/VuepressReWi/wiki">Wiki<a/></li>
-      </ul>`,
+      </ul>
+      `,
       style: 'font-size: 12px;'
     },
     {
@@ -36,7 +46,7 @@ export const bulletin = {
       type: 'buttongroup',
       children: [
         {
-          text: 'Donate',
+          text: '打赏',
           link: '/docs/others/donate.html'
         }
       ]

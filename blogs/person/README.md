@@ -1,6 +1,8 @@
 ---
 title: '关于我'
 date: 2020-06-14 22:38:39
+categories:
+ - person
 ---
 
 

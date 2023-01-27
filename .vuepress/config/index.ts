@@ -36,12 +36,12 @@ export const themeConfig = {
         }
     },
     style: '@vuepress-reco/style-default',
-    logo: '/favicon.ico',
+    logo: '/favicon.ico', 
     author: 'ReWi',
     docsRepo: 'https://github.com/Re-Wi/VuepressReWi.git',
     docsBranch: 'main',
     docsDir: 'docs',
-    //lastUpdatedText: '',
+    lastUpdatedText: '',
     // vuePreviewsDir: './docs/.vuepress/vue-previews',
     // componentsDir: './docs/.vuepress/components',
 

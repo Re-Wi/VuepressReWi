@@ -1,4 +1,11 @@
-# 共享文件夹
+---
+title: 共享文件夹
+date: 2019/09/21
+tags:
+ - Windows
+categories:
+ - IT
+---
 
 ## 1. Windows开启共享文件夹
 

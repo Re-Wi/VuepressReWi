@@ -1,8 +1,9 @@
 export const bulletin = {
+  title: 'Bulletin',
   body: [
     {
       type: 'text',
-      content: `🎉🎉🎉 reco 主题 2.x 已经接近 Beta 版本，在发布 Latest 版本之前不会再有大的更新，大家可以尽情尝鲜了，并且希望大家在 QQ 群和 GitHub 踊跃反馈使用体验，我会在第一时间响应。`,
+      content: `加入QQ群blblblblblbblblblbla`,
       style: 'font-size: 12px;'
     },
     {
@@ -15,9 +16,10 @@ export const bulletin = {
     {
       type: 'text',
       content: `
-  <ul>
-    <li>1057492554（计算机技术小白交流区）</li>
-  </ul>`,
+      <ul>
+      <li>1057492554 (Computer technology small white exchange area)</li>
+      </ul>
+      `,
       style: 'font-size: 12px;'
     },
     {
@@ -30,10 +32,11 @@ export const bulletin = {
     {
       type: 'text',
       content: `
-  <ul>
-    <li><a href="https://github.com/Re-Wi/VuepressReWi/issues">Issues<a/></li>
-    <li><a href="https://github.com/Re-Wi/VuepressReWi/wiki">Wiki<a/></li>
-  </ul>`,
+      <ul>
+      <li><a href="https://github.com/Re-Wi/VuepressReWi/issues">Issues<a/></li>
+      <li><a href="https://github.com/Re-Wi/VuepressReWi/wiki">Wiki<a/></li>
+      </ul>
+      `,
       style: 'font-size: 12px;'
     },
     {

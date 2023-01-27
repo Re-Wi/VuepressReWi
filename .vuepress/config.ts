@@ -1,7 +1,8 @@
 import { defineUserConfig } from 'vuepress'
 import type { DefaultThemeOptions } from 'vuepress'
-import { recoTheme } from 'vuepress-theme-reco'
+import recoTheme from 'vuepress-theme-reco'
 import { themeConfig } from './config/index'
+
 export default defineUserConfig({
   title: '学习&交流-怿窗的博客',
   description: '怿窗の博客',
