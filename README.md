@@ -13,11 +13,13 @@ bannerBrand:
   buttons:
     - { text: 主页, link: '/' }
     - { text: 英文, link: '/en/', type: 'plain' }
+    - { text: 打赏, link: '/blogs/person/donate' }
   socialLinks:
     - { icon: 'LogoGithub', link: 'https://github.com/Re-Wi/VuepressReWi' }
 blog:
   socialLinks:
-    - { icon: 'LogoGithub', link: 'https://github.com/recoluan' }
+    - { icon: 'LogoGithub', link: 'https://github.com/Re-Wi' }
+    - { icon: 'LogoGithub', link: 'https://gitee.com/re-wi' }
 banner: # banner 模块的配置
   heroText: 学习并快乐着
   tagline: Enjoy when you can, and endure when you must.

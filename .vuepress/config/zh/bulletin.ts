@@ -1,5 +1,5 @@
 export const bulletin = {
-  title: 'Bulletin',
+  title: '公告',
   body: [
     {
       type: 'text',
@@ -47,7 +47,7 @@ export const bulletin = {
       children: [
         {
           text: '打赏',
-          link: '/docs/others/donate.html'
+          link: '/blogs/person/donate'
         }
       ]
     }

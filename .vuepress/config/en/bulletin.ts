@@ -47,7 +47,7 @@ export const bulletin = {
       children: [
         {
           text: '打赏',
-          link: '/docs/others/donate.html'
+          link: '/blogs/person/donate.html'
         }
       ]
     }

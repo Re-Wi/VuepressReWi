@@ -44,8 +44,12 @@ export const themeConfig = {
     docsBranch: 'master',
     docsDir: 'docs',
     lastUpdatedText: '',
-    // vuePreviewsDir: './docs/.vuepress/vue-previews',
-    // componentsDir: './docs/.vuepress/components',
+    
+    autoSetBlogCategories: true,
+    // autoAddCategoryToNavbar: true,
+    autoSetSeries: true,
+    vuePreviewsDir: './.vuepress/vue-previews',
+    componentsDir: './.vuepress/components',
 
     // valineConfig 配置与 1.x 一致
     // valineConfig: {
