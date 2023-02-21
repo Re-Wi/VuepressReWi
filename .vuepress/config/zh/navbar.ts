@@ -5,7 +5,9 @@ export const navbar = [
   { text: '文档',
     children: [
       { text: 'vuepress-reco', link: '/docs/theme-reco/theme' },
-      { text: 'vuepress-theme-reco', link: '/blogs/other/guide' }
+      { text: 'MasterReWi', link: '/docs/MasterReWi' },
+      { text: 'ECOReWi', link: '/docs/ECOReWi/' },
+      { text: 'TimeAiderReWi', link: '/docs/TimeAiderReWi/' }
     ]
   },
   { text: '博客',

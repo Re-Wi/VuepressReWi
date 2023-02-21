@@ -1,6 +1,6 @@
-import { defineUserConfig } from 'vuepress'
-import type { DefaultThemeOptions } from 'vuepress'
-import recoTheme from 'vuepress-theme-reco'
+import { defineUserConfig } from "vuepress";
+import type { DefaultThemeOptions } from "vuepress";
+import recoTheme from "vuepress-theme-reco";
 import { themeConfig } from './config/index'
 
 export default defineUserConfig({

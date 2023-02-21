@@ -1,10 +1,23 @@
 ---
 home: true
 modules:
-  - Banner
   - BannerBrand
+  - Blog
   - MdContent
   - Footer
+bannerBrand:
+  bgImage: '/bg.svg'
+  title: VuepressReWi
+  description: 一款简洁的 vuepress 博客 & 文档 主题。
+  tagline: RejoiceWindow 。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+  buttons:
+    - { text: 主页, link: '/' }
+    - { text: 英文, link: '/en/', type: 'plain' }
+  socialLinks:
+    - { icon: 'LogoGithub', link: 'https://github.com/Re-Wi/VuepressReWi' }
+blog:
+  socialLinks:
+    - { icon: 'LogoGithub', link: 'https://github.com/recoluan' }
 banner: # banner 模块的配置
   heroText: 学习并快乐着
   tagline: Enjoy when you can, and endure when you must.
@@ -18,29 +31,15 @@ banner: # banner 模块的配置
   bgImage: /img/hero.png
   bgImageStyle:
     height: 450px
-bannerBrand:
-  heroImage: /logo.png
-  heroImageStyle:
-    maxWidth: '200px'
-    width: '100%'
-    display: block
-    margin: '0 auto 2rem'
-    borderRadius: '1rem'
-  bgImage: '/bg.svg'
-  heroText: vuepress-rewi
-  tagline: RejoiceWindow 。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
-  buttons:
-    - { text: 主页, link: '/' }
-    - { text: 英文, link: '/en/', type: 'plain' }
-isShowTitleInHome: true
-actionText: About
-actionLink: /views/other/about
 footer: # 底部模块的配置
   record: 域名备案文案
   recordLink: https://rewi.cc/
   cyberSecurityRecord: 公安备案文案
   cyberSecurityLink: 公安备案地址
   startYear: 2018
+isShowTitleInHome: true
+actionText: About
+actionLink: /views/other/about
 ---
 
 ## 快速开始

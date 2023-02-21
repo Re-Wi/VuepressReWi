@@ -12,6 +12,7 @@ export const themeConfig = {
             selectLanguageName: '简体中文',
             lastUpdatedText: '最后更新时间',
             navbar: zhConfig.navbar,
+            // series 为原 sidebar
             series: zhConfig.series,
             commentConfig: zhConfig.commentConfig,
             bulletin: zhConfig.bulletin,
@@ -35,11 +36,12 @@ export const themeConfig = {
             //    editLinkText: 'Edit this page on GitHub',
         }
     },
-    style: '@vuepress-reco/style-default',
+    style: "@vuepress-reco/style-default",
     logo: '/favicon.ico', 
     author: 'ReWi',
+    authorAvatar: "/head.png",
     docsRepo: 'https://github.com/Re-Wi/VuepressReWi.git',
-    docsBranch: 'main',
+    docsBranch: 'master',
     docsDir: 'docs',
     lastUpdatedText: '',
     // vuePreviewsDir: './docs/.vuepress/vue-previews',

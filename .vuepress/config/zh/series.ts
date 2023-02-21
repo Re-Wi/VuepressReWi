@@ -15,7 +15,6 @@ export const series = {
       children: ['api', 'plugin']
     }
   ],
-  // todo README.md 无法展示，没有对 '' 进行处理
   '/docs/guide/': ['introduce', 'getting-started', 'style', 'contribute', 'folder-specification'],
   '/docs/theme/': [
     {
