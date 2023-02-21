@@ -1,5 +1,5 @@
 ---
-title: 后端安装环境报错处理
+title: Gin操作项目报错处理
 date: 2023/02/20
 tags:
  - 报错处理
@@ -15,3 +15,7 @@ categories:
 go env -w GO111MODULE=on
 go env -w GOPROXY=https://goproxy.cn,direct
 ```
+
+## [error] failed to initialize database, got error Binary was compiled with 'CGO_ENABLED=0', go-sqlite3 requires cgo to work. This is a stub
+
+<!-- TODO -->
