@@ -1,6 +1,6 @@
 {
   "name": "vuepress-rewi",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "怿窗の博客",
   "repository": "git@github.com:Re-Wi/VuepressReWi.git",
   "author": "ReWi <RejoiceWindow@yeah.net>",
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "vuepress": "2.0.0-beta.60",
-    "vuepress-theme-reco": "2.0.0-beta.46"
+    "vuepress-theme-reco": "2.0.0-beta.50"
   },
   "keywords": [
     "RejoiceWindow",

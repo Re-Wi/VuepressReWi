@@ -89,6 +89,7 @@ typings/
 # public
 
 # vuepress build output
+.temp/
 .vuepress/dist/
 
 # Serverless directories
@@ -102,15 +103,6 @@ typings/
 
 # TernJS port file
 .tern-port
-
-node_modules
-
-.temp/
-.cache/
-docs/.vuepress/dist/
-docs/.vuepress/public/images
-*.exe
-*.cpp
 
 # local env files
 .env.local
@@ -133,11 +125,6 @@ pnpm-debug.log*
 *.sln
 *.sw?
 
-# VuePress files
-docs/.vuepress/.temp/
-docs/.vuepress/.cache/
-docs/.vuepress/dist/
-
 # Dist files
 lib/
 
@@ -147,13 +134,5 @@ lib/
 # Test coverage files
 coverage/
 
-# Node modules
-node_modules/
-
 # MacOS Desktop Services Store
 .DS_Store
-
-
-
-# Typescript build info
-*.tsbuildinfo
