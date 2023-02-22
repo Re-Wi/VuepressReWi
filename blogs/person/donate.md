@@ -11,7 +11,7 @@ isShowComments: false
 可以为作者贡献一杯奶茶。😆😆😆😁😁😁
 :::
 
-| WeChat                                                | AliPay                                                |
+| 微信（WeChat）                                        | 支付宝（AliPay）                                      |
 | ----------------------------------------------------- | ----------------------------------------------------- |
 | <img style="width: 160px" src="/donate/wechat.png" /> | <img style="width: 160px" src="/donate/alipay.png" /> |
 

@@ -18,4 +18,11 @@ go env -w GOPROXY=https://goproxy.cn,direct
 
 ## [error] failed to initialize database, got error Binary was compiled with 'CGO_ENABLED=0', go-sqlite3 requires cgo to work. This is a stub
 
-<!-- TODO -->
+- https://blog.csdn.net/halo_hsuh/article/details/106573097
+
+| windows 安装 mingw32、mingw64 , linux 平台自身带gcc 和 g++ 只要系统环境访问到即可，使用交叉编译的话 自行编译
+
+> 需要命令行使用gcc、g++
+
+- 解决办法：https://blog.csdn.net/jiqiren_dasheng/article/details/103775488
+- 下载地址（往下滑动，Windows推荐下载`x86_64-win32-sjlj`）：https://sourceforge.net/projects/mingw-w64/files/
