@@ -120,3 +120,13 @@ npm run deploy
 # or
 cnpm run deploy
 ```
+
+## 提交代码
+
+```shell
+yarn push 
+# or
+npm run push
+# or
+cnpm run push
+```

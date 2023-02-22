@@ -15,7 +15,7 @@ cd .vuepress/dist
 # deploy to github pages
 echo 'git@github.com:RejoiceWindow/vuepress-rewi_dist.git' > CNAME
 
-VERSION=`node -p -e "require('./package.json').version"`
+VERSION=`node -p -e "require('../../package.json').version"`
 
 # if [ -z "$GITHUB_TOKEN" ]; then
 #   msg=${VERSION}': deploy'
@@ -23,8 +23,8 @@ VERSION=`node -p -e "require('./package.json').version"`
 # else
 msg=${VERSION}'：来自github actions的自动部署'
 githubUrl=git@github.com:RejoiceWindow/vuepress-rewi_dist.git
-git config --global user.name "RejoiceWindow"
-git config --global user.email "ziranzhimi@yeah.net"
+# git config --global user.name "RejoiceWindow"
+# git config --global user.email "ziranzhimi@yeah.net"
 # fi
 
 # date=`date +%Y-%m-%d_%H:%M:%S`

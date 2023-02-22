@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 VERSION=`node -p -e "require('./package.json').version"`
 COMMIT_M=`node -p -e "require('./package.json').commit_m"`
 
