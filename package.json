@@ -1,6 +1,7 @@
 {
   "name": "vuepress-rewi",
-  "version": "0.1.2",
+  "version": "0.1.3",
+  "commit_m": "更新donate；修改提交、发布脚本",
   "description": "怿窗の博客",
   "repository": "git@github.com:Re-Wi/VuepressReWi.git",
   "author": "ReWi <RejoiceWindow@yeah.net>",
@@ -9,7 +10,8 @@
     "dev": "vuepress dev . --temp .temp  --cache .cache",
     "start": "vuepress dev . --temp .temp --cache .cache",
     "build": "vuepress build . --temp .temp --cache .cache",
-    "deploy": "bash scripts/deploy.sh"
+    "deploy": "bash scripts/deploy.sh",
+    "push": "bash scripts/push.sh"
   },
   "dependencies": {
     "vuepress": "2.0.0-beta.60",
