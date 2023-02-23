@@ -29,5 +29,6 @@ awk -F'"' '/"version": ".+"/{ print $4; exit; }' package.json
 - https://blog.csdn.net/weixin_48321825/article/details/124431351
 
 ```text
-第一次提交需要加 -u参数后，以后即可直接用git push代替git push origin master
+第一次提交需要加 -u参数后，
+以后即可直接用git push代替git push origin master
 ```
