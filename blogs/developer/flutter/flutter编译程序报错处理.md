@@ -25,3 +25,22 @@ flutter doctor
 换个网络 或者 修改字体<未验证>
 
 - https://blog.csdn.net/longlyboyhe/article/details/114268663
+
+## 卡死在 Running Gradle task 'assembleDebug'...
+
+- https://flutteragency.com/solve-running-gradle-task-assembledebug/
+
+> If you are on Windows: try adding firewall exceptions to your Android Studio follow below steps:
+
+```bash
+# Open your flutter Project directory.
+# Change directory to android directory in your flutter project directory 
+cd android
+# lean gradle 
+./gradlew clean
+# Build Gradle 
+./gradlew build 
+# or you can combine both commands with just 
+# ./gradlew clean build.
+# Now run your flutter project. If you use vscode, press F5. The first time Gradle running assembly debug will take time.
+```
