@@ -23,3 +23,13 @@ categories:
 ## Flutter | 你真的会用 Slider 组件吗
 
 - https://juejin.cn/post/6959703051586240549
+
+## flutter - jsonEncode（DateTime）
+
+- https://blog.csdn.net/win7583362/article/details/107465371
+- https://blog.csdn.net/hxl517116279/article/details/88378238
+
+```dart
+  //padLeft(int width,String padding)：如果字符串长度小于width，在左边填充padding
+ 'date': "${instance.date.year.toString()}-${instance.date.month.toString().padLeft(2,'0')}-${instance.date.day.toString().padLeft(2,'0')}T${instance.date.hour.toString().padLeft(2, '0')}:${instance.date.minute.toString().padLeft(2, '0')}:${instance.date.second.toString().padLeft(2, '0')}+08:00",
+```
