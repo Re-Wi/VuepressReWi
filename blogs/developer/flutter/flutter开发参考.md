@@ -33,3 +33,8 @@ categories:
   //padLeft(int width,String padding)：如果字符串长度小于width，在左边填充padding
  'date': "${instance.date.year.toString()}-${instance.date.month.toString().padLeft(2,'0')}-${instance.date.day.toString().padLeft(2,'0')}T${instance.date.hour.toString().padLeft(2, '0')}:${instance.date.minute.toString().padLeft(2, '0')}:${instance.date.second.toString().padLeft(2, '0')}+08:00",
 ```
+
+## Flutter文件上传和下载
+
+- https://www.jianshu.com/p/e867567dd2ff
+- https://bytenote.net/article/164278401387986945

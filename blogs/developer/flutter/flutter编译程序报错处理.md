@@ -44,3 +44,48 @@ cd android
 # ./gradlew clean build.
 # Now run your flutter project. If you use vscode, press F5. The first time Gradle running assembly debug will take time.
 ```
+
+## Flutter 3.3.6 中FlatButton, RaisedButton, & OutlineButton找不到
+
+- https://blog.csdn.net/MrLizuo/article/details/127635511
+
+```dart
+// Code before migration:
+FlatButton(
+  onPressed: onPressed,
+  child: Text('Button'),
+  // ...
+);
+
+RaisedButton(
+  onPressed: onPressed,
+  child: Text('Button'),
+  // ...
+);
+
+OutlineButton(
+  onPressed: onPressed,
+  child: Text('Button'),
+  // ...
+);
+
+// Code after migration:
+TextButton(
+  onPressed: onPressed,
+  child: Text('Button'),
+  // ...
+);
+
+ElevatedButton(
+  onPressed: onPressed,
+  child: Text('Button'),
+  // ...
+);
+
+OutlinedButton(
+  onPressed: onPressed,
+  child: Text('Button'),
+  // ...
+);
+
+```
