@@ -7,55 +7,10 @@ categories:
  - flutter
 ---
 
-## Unsupported operation: Unsupport download API in browser
+## Failed to upload file: FormatException: Unexpected character(at 0 character 2)
 
-- 
+- https://stackoverflow.com/questions/55671441/flutter-formatexception-unexpected-character-at-character-1
 
 ```dart
- Column(
-          children: [
-            RichText(
-              text: TextSpan(children: [
-                TextSpan(
-                  style: new TextStyle(color: Colors.black),
-                  text: "seeSourceFirst",
-                ),
-                TextSpan(
-                  text: "seeSourceFirst",
-                  style: Theme.of(context).textTheme.headlineSmall,
-                ),
-              ]),
-            ),
-            RichText(
-              text: TextSpan(
-                children: [
-                  TextSpan(
-                    style: new TextStyle(color: Colors.black),
-                    text: "seeSourceFirst",
-                  ),
-                  TextSpan(
-                    style: new TextStyle(color: Colors.blueAccent),
-                    text: "repoText",
-                    recognizer: TapGestureRecognizer()
-                      ..onTap = () async {
-                        final url = 'https://github.com/flutter/gallery/';
-                        if (await canLaunch(url)) {
-                          await launch(
-                            url,
-                            forceSafariVC: false,
-                          );
-                        }
-                      },
-                  ),
-                  TextSpan(
-                    text: "seeSourceSecond",
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              width: double.infinity,
-              child: LinearProgressIndicator(value: _progress),
-            ),
-          ],
+ var pdfText= await json.decode(json.encode(response.databody);  
 ```
