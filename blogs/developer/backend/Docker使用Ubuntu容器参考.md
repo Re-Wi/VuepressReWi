@@ -9,8 +9,11 @@ categories:
 
 ## Docker 创建
 
+- https://hub.docker.com/search?q=ubuntu
+- https://hub.docker.com/_/ubuntu
+
 ```shell
-sudo docker run -d --name=UbuntuGoReWi  -it -p 3680:80 -p 3443:443 -p 3622:22 -p 3688:3688 -p 5688:5688 -p 7688:7688 -p 9688:9688 -v /home/www/UbuntuGoReWi:/home --privileged=true --restart=always  ubuntu:18.04
+sudo docker run -d --name=UbuntuGoReWi  -it -p 3680:80 -p 3443:443 -p 3622:22 -p 3688:3688 -p 5688:5688 -p 7688:7688 -p 9688:9688 -v /home/www/UbuntuGoReWi:/home --privileged=true --restart=always  ubuntu:22.04
 ```
 
 ## Ubuntu 新建用户及文件夹
@@ -91,4 +94,42 @@ apt-get install openssh-server -y
 systemctl enable ssh #开机启动 
 systemctl restart ssh #重启ssh 
 systemctl status ssh #查看ssh状态
+```
+
+## 启用中文支持
+
+- https://blog.csdn.net/llllllloooooo/article/details/102852027
+- https://zhuanlan.zhihu.com/p/165961076
+
+> 简单的说是因为服务器没有安装zh_CN.UTF-8 字符集，导致不支持中文！
+> locale 执行这个命令，查看和语言编码有关的环境变量
+
+### 查看
+```shell
+# 查看当前语言
+locale
+# 查看当前已安装的语言
+locale -a
+```
+### 安装语言包
+
+```shell
+# 1.安装基本的软件包（第2步安装 zh_CN 中文字符集时要用到）
+sudo apt-get update   # ubuntu系统更新软件包列表
+sudo apt-get install  -y language-pack-zh-hans
+sudo apt-get install -y language-pack-zh-hant
+# 字符集
+locale-gen zh_CN.UTF-8
+# 再次查看
+locale -a
+```
+### 添加到文件
+
+```shell
+echo "export LC_ALL=zh_CN.UTF-8">> /etc/profile
+source /etc/profile
+# 如果这里添加失败，提示没有这种语言包，退出容器，再重新进入，就可以添加了
+
+# 完成
+locale
 ```

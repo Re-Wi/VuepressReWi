@@ -2,9 +2,9 @@
 title: Ubuntu系统报错
 date: 2023/02/28 19:00
 tags:
- - backend
-categories:
  - Ubuntu
+categories:
+ - 系统报错
 ---
 
 ## cgo: C compiler "gcc" not found: exec: "gcc": executable file not found in $PATH
@@ -19,4 +19,13 @@ categories:
 apt install gcc
 # 查看新版本
 gcc -v
+```
+
+## System has not been booted with systemd as init system (PID 1). Can't operate.
+Failed to connect to bus: Host is down
+
+- https://blog.csdn.net/xiao_yi_xiao/article/details/120672705
+
+```shell
+sudo apt install systemctl
 ```
