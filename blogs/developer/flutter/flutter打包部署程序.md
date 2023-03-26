@@ -2,9 +2,9 @@
 title: flutter打包部署程序
 date: 2023/03/14
 tags:
- - 打包部署
-categories:
  - flutter
+categories:
+ - 打包部署
 ---
 
 ## 使用 InnoSetup 将 Flutter 打包成 exe 安装程序

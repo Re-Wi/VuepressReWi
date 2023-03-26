@@ -252,6 +252,7 @@ http {
 }
 
 ```
+
 ## Nginx 命令
 
 - https://www.nginx.org.cn/article/detail/476/
@@ -266,4 +267,72 @@ nginx -s reopen #重启
 nginx -tc XXX.conf
 #设置配置文件(默认是:/etc/nginx/nginx.conf)
 nginx -c XXX.conf
+```
+
+## Vue 项目 配置
+
+- https://blog.csdn.net/weixin_43314519/article/details/115151858
+
+```nginx
+upstream XXX_backend {
+  #ip_hash;
+  server   localhost:XXXX max_fails=2 fail_timeout=30s ;
+}
+
+server {
+    # 需要被监听的端口号，前提是此端口号没有被占用，否则在重启 Nginx 时会报错
+    listen       8888;
+    # 服务名称，无所谓
+    server_name  localhost;
+
+    # 上述端口指向的根目录
+    root /opt/asing1elife/teamnote;
+    # 项目根目录中指向项目首页
+    index index.html;
+
+    client_max_body_size 20m; 
+    client_body_buffer_size 128k;
+
+    # 根请求会指向的页面
+    location / {
+      # 此处的 @router 实际上是引用下面的转发，否则在 Vue 路由刷新时可能会抛出 404
+      try_files $uri $uri/ @router;
+      # 请求指向的首页
+      index index.html;
+    }
+
+    # 由于路由的资源不一定是真实的路径，无法找到具体文件
+    # 所以需要将请求重写到 index.html 中，然后交给真正的 Vue 路由处理请求资源
+    location @router {
+      rewrite ^.*$ /index.html last;
+    }
+
+    # 关键步骤，这里表示将所有的 http://192.168.7.8:8888/teamnote/api/ 开头的请求都转发到下面 proxy_pass 指定的链接中
+    # 这里使用 /teamnote/api/ 而不是 /teamnote/ ，是因为前端项目本身的访问链接就是 http:192.168.7.8:8888/teamnote/
+    # 为了防止在访问页面时请求就被 Nginx 代理转发，这里需要更具体的配置，才能和前端访问请求区分开
+    location /teamnote/api/ {
+          # 后端的真实接口
+          proxy_pass http://192.168.7.8:2592/teamnote/api/;
+          proxy_redirect off;
+          proxy_set_header Host $host;
+          proxy_set_header X-Real-IP $remote_addr;
+          proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+          proxy_set_header   Cookie $http_cookie;
+          # for Ajax
+          #fastcgi_param HTTP_X_REQUESTED_WITH $http_x_requested_with;
+          proxy_set_header HTTP-X-REQUESTED-WITH $http_x_requested_with;
+          proxy_set_header HTTP_X_REQUESTED_WITH $http_x_requested_with;
+          proxy_set_header x-requested-with $http_x_requested_with;
+          client_max_body_size 10m;
+          client_body_buffer_size 128k;
+          proxy_connect_timeout 90;
+          proxy_send_timeout 90;
+          proxy_read_timeout 90;
+          proxy_buffer_size 128k;
+          proxy_buffers 32 32k;
+          proxy_busy_buffers_size 128k;
+          proxy_temp_file_write_size 128k;
+    }
+}
+
 ```

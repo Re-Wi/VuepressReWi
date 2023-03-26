@@ -4,7 +4,7 @@ date: 2023/02/20
 tags:
  - Git
 categories:
- - 报错处理
+ - 提交报错
 ---
 
 ## git提示“warning: LF will be replaced by CRLF”的解决办法

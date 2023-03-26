@@ -2,9 +2,9 @@
 title: flutter 运行程序报错处理
 date: 2023/03/24
 tags:
- - 运行程序报错
-categories:
  - flutter
+categories:
+ - 运行报错
 ---
 
 ## Failed to upload file: FormatException: Unexpected character(at 0 character 2)

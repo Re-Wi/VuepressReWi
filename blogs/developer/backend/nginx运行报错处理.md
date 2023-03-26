@@ -2,9 +2,9 @@
 title: nginx运行报错处理
 date: 2023/02/20
 tags:
- - 报错处理
-categories:
  - nginx
+categories:
+ - 报错处理
 ---
 
 ## nginx: [emerg] getpwnam("www") failed in

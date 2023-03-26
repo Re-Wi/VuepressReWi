@@ -2,9 +2,9 @@
 title: flutter安装环境错误处理
 date: 2023/02/20
 tags:
- - 报错处理
-categories:
  - flutter
+categories:
+ - 安装报错
 ---
 
 ## [X] Windows Version (Unable to confirm if installed Windows version is 10 or greater)

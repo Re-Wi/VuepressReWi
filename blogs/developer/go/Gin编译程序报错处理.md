@@ -1,10 +1,10 @@
 ---
-title: Gin操作项目报错处理
+title: Gin编译程序报错处理
 date: 2023/02/20
 tags:
- - 报错处理
+ - Gin
 categories:
- - 后端开发
+ - 编译报错
 ---
 
 ## 解决golang编译提示dial tcp 172.217.160.113:443: connectex: A connection attempt failed

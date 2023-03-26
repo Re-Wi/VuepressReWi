@@ -2,9 +2,9 @@
 title: Go开发参考
 date: 2023/03/02
 tags:
- - 开发参考
-categories:
  - Go
+categories:
+ - 开发参考
 ---
 
 ## go mod 使用方法
@@ -876,4 +876,22 @@ func GetMaxNum[T int | int8](a, b T) T {
 ```bash
 go get -u
 go mod tidy
+```
+
+## Go语言获取文件的文件路径、文件名、扩展名
+
+- https://blog.csdn.net/u012183747/article/details/73666363
+
+```go
+import (
+"fmt"
+"os"
+"path/filepath"
+"path"
+)
+files := "E:\\data\\test.txt"
+paths, fileName := filepath.Split(files)
+fmt.Println(paths, fileName) //获取路径中的目录及文件名 E:\data\  test.txt
+fmt.Println(filepath.Base(files)) //获取路径中的文件名test.txt
+fmt.Println(path.Ext(files)) //获取路径中的文件的后缀 .txt
 ```

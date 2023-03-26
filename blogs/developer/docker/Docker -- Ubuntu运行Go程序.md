@@ -6,13 +6,20 @@ tags:
  - Docker
  - Ubuntu
 categories:
- - Go Web
+ - 程序安装
 ---
 
-## ubuntu 安装go
+## Ubuntu 安装go（命令方式）
+
+```shell
+apt-get install -y golang
+```
+
+## Ubuntu 安装go（源码方式）
 
 - <https://blog.csdn.net/liangcsdn111/article/details/115405223>
 - <https://blog.csdn.net/dlh918/article/details/127524625>
+- https://studygolang.com/dl
 
 ### 1. 下载安装包
 
@@ -22,13 +29,13 @@ categories:
  命令执行完毕后会将压缩包下载到当前目录中。
 
 ```shell
-wget https://golang.google.cn/dl/go1.19.6.linux-amd64.tar.gz
+wget https://golang.google.cn/dl/go1.20.2.linux-amd64.tar.gz
 ```
 
 ### 2. 解压到指定文件中
 
 ```shell
-tar -C /usr/local -xzf go1.19.6.linux-amd64.tar.gz
+tar -C /usr/local -xzf go1.20.2.linux-amd64.tar.gz
 ```
 
 ### 3. 设置go环境变量
@@ -37,9 +44,9 @@ sudo nano 打开/etc/profile文件，追加导出命令
 安装nano： apt-get install nano
 
 ```shell
-nano /etc/profile
-   export GOROOT=/usr/local/go
-   export PATH=$PATH:$GOROOT/bin
+echo "### Go ###" >> /etc/profile
+echo "export GOROOT=/usr/local/go" >> /etc/profile
+echo "export PATH=\$PATH:\$GOROOT/bin" >> /etc/profile
 ```
 
 ### 4. 生效环境变量
