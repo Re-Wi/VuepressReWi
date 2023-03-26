@@ -133,3 +133,12 @@ source /etc/profile
 # 完成
 locale
 ```
+
+## 在.sh 文件中使用 source 命令不生效
+
+- https://www.cnblogs.com/CharrammaBlog/p/13540302.html
+
+```shell
+# 使用 source 命令
+source XXX.sh
+```

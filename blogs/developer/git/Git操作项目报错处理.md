@@ -2,9 +2,9 @@
 title: Git操作项目报错处理
 date: 2023/02/20
 tags:
- - 报错处理
+ - Git
 categories:
- - 操作项目
+ - 报错处理
 ---
 
 ## git提示“warning: LF will be replaced by CRLF”的解决办法

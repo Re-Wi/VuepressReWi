@@ -12,6 +12,7 @@ categories:
 - https://zhuanlan.zhihu.com/p/266899863
 - https://blog.csdn.net/qq_33229176/article/details/113055364
 - https://www.liwenzhou.com/posts/Go/deploy-in-docker/
+- https://blog.csdn.net/zzhongcy/article/details/105071018
 
 ### 安装
 
@@ -20,7 +21,7 @@ categories:
 yum install supervisor
 
 # 2）ubuntu安装：
-sudo apt-get install supervisor 
+apt-get install supervisor 
 # （如果安装失败检查镜像源，替换最新的更新下然后再安装）
 
 # 3）masOS安装：
@@ -36,10 +37,11 @@ brew install supervisor
 [include]
 files = /etc/supervisor/conf.d/*.conf
 ```
-启动supervisor服务：
+
+启动supervisor服务
 
 ```
-sudo supervisord -c /etc/supervisor/supervisord.conf
+supervisord -c /etc/supervisor/supervisord.conf
 ```
 
 > 以ubuntu为例，在/etc/supervisor/conf.d 文件下添加`KitReWi.conf`文件
@@ -56,6 +58,7 @@ nano KitReWi.conf
 program：项目名称
 command 执行命令 使用go build -o KitReWi 编译后文件路径
 
+注：分号（;）开头的配置表示注释
 ```conf
 [program:KitReWi]  ;程序名称
 user=root  ;执行程序的用户
@@ -74,14 +77,13 @@ stderr_logfile_maxbytes=1MB
 stderr_logfile_backups=10
 stderr_capture_maxbytes=1MB
 stopsignal=INT
-[supervisord]
 ```
 ### 启动服务 
 
 ```shell
 supervisorctl start KitReWi
-sudo supervisorctl update # 更新配置文件并重启相关的程序
-sudo supervisorctl status KitReWi # 查看bluebell的运行状态
+supervisorctl update # 更新配置文件并重启相关的程序
+supervisorctl status KitReWi # 查看bluebell的运行状态
 ```
 
 ### 常用的supervisr管理命令
@@ -92,7 +94,7 @@ supervisorctl shutdown     # 关闭所有任务
 supervisorctl start 程序名  # 启动任务
 supervisorctl stop 程序名   # 关闭任务
 supervisorctl reload       # 重启supervisor
-sudo service supervisor stop # 停止supervisor服务
-sudo service supervisor start # 启动supervisor服务
+service supervisor stop # 停止supervisor服务
+service supervisor start # 启动supervisor服务
 supervisorctl stop|start program_name #启动或停止服务
 ```
