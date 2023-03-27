@@ -1,7 +1,7 @@
 export const navbar = [
   { text: '主页', link: '/' },
-  { text: '分类', link: '/categories/category1/1/' },
-  { text: '标签', link: '/tags/tag1/1/' },
+  { text: '分类', link: '/categories/person/1/' },
+  { text: '标签', link: '/tags/person/1/' },
   {
     text: '文档',
     children: [
