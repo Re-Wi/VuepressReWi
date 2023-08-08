@@ -1,6 +1,6 @@
 ---
 title: Nginx 配置
-date: 2023/02/20
+date: 2023-02-20 00:00:00
 tags:
  - Nginx
 categories:

@@ -1,6 +1,6 @@
 ---
 title: flutter安装环境错误处理
-date: 2023/02/20
+date: 2023-02-20 00:00:00
 tags:
  - flutter
 categories:

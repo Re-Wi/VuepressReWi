@@ -1,5 +1,7 @@
 export const navbar = [
   { text: 'Home', link: '/en/' },
+  // { text: "Categories", link: "/categories/en/person/1/" },
+  // { text: "Tags", link: "/tags/en/person/1/" },
   {
     text: 'Version',
     icon: 'Versions',

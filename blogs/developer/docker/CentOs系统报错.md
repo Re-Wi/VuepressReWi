@@ -1,6 +1,6 @@
 ---
 title: CentOs系统报错
-date: 2023/01/27 11:00
+date: 2023-01-27 11:00:00
 tags:
  - CentOs
 categories:

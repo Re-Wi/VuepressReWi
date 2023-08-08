@@ -1,6 +1,6 @@
 ---
 title: flutter打包部署程序
-date: 2023/03/14
+date: 2023-03-14 00:00:00
 tags:
  - flutter
 categories:

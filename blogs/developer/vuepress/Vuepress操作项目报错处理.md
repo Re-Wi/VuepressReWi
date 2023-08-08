@@ -1,6 +1,6 @@
 ---
 title: Vuepress操作项目报错处理
-date: 2023/02/20
+date: 2023-02-20 00:00:00
 tags:
  - Vuepress
 categories:

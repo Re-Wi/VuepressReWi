@@ -1,6 +1,6 @@
 ---
 title: Go语言项目部署
-date: 2023/03/26 02:00
+date: 2023-03-26 02:00:00
 tags:
  - Go
 categories:

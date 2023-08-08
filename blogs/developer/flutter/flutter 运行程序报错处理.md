@@ -1,6 +1,6 @@
 ---
 title: flutter 运行程序报错处理
-date: 2023/03/24
+date: 2023-03-24 00:00:00
 tags:
  - flutter
 categories:

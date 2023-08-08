@@ -1,15 +1,12 @@
 ---
 home: true
-isShowTitleInHome: true
-actionText: About
-actionLink: /views/other/about
-modules:
-  - 'CustomBanner'
+modules: # 指定首页展示模块
+  - Banner
   - Blog
   - MdContent
   - Footer
-customBanner:
-  heroText: vuepress-reco
+banner: # banner 模块的配置
+  heroText: vuepress-rewi
   tagline: 多语言测试。
   heroImage: /logo.png
   heroImageStyle:
@@ -19,30 +16,28 @@ customBanner:
     margin: 0 auto 2rem
     borderRadius: 1rem
   bgImage: /bg.svg
-  # bgImageStyle:
-  #   height: 450px
+  bgImageStyle:
+    height: 450px
+bannerBrand: # bannerBrand 模块的配置
+  title: 怿窗の博客
+  description: 一款简洁的 vuepress 博客 & 文档 主题。
+  tagline: vuepress-theme-reco 2.0 继续坚持简洁的风格，所有功能开箱即用，首页模块化组装，使用 tailwindcss 书写样式，将 Vite 作为默认编译器。你只需要负责内容创作，其他请交给我。
   buttons:
     - { text: Guide, link: '/blogs/category1/blog2' }
     - { text: Plan, link: '/blogs/category1/blog2', type: 'plain', icon: 'Alien' }
-  socialLinks:
+  socialLinks: # 社交地址
+    - { icon: 'BrandGithub', link: 'https://github.com/Re-Wi' }
+blog: # blog 模块的配置
+  socialLinks: # 社交地址
     - { icon: 'BrandGithub', link: 'https://github.com/recoluan' }
     - { icon: 'BrandTwitter', link: 'https://twitter.com/reco_luan' }
-blog:
-  socialLinks:
-    - { icon: 'BrandGithub', link: 'https://github.com/recoluan' }
     - { icon: 'BrandTwitter', link: 'https://twitter.com/reco_luan' }
-    - { icon: 'BrandTwitter', link: 'https://twitter.com/reco_luan' }
-footer:
-  record: xxxx
-  cyberSecurityRecord: xxx
+footer: # 底部模块的配置
+  record: 域名备案文案
+  recordLink: 域名备案地址
+  cyberSecurityRecord: 公安备案文案
+  cyberSecurityLink: 公安备案地址
   startYear: 2018
-features:
-- title: 过去
-  details: 开发一款看着开心、写着顺手的 vuepress 博客主题。
-- title: 当下
-  details: 帮助更多的朋友节省时间去用心书写内容，而不是仅仅配置一个博客去孤芳自赏。
-- title: 未来
-  details: 吸引更多的朋友参与到开发中来，继续强大功能。
 ---
 
 ```ts{1,3}
