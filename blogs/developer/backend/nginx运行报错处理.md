@@ -9,7 +9,7 @@ categories:
 
 ## nginx: [emerg] getpwnam("www") failed in
 
-- https://blog.csdn.net/u012383839/article/details/72875210
+- <https://blog.csdn.net/u012383839/article/details/72875210>
 
 ```shell
 /usr/sbin/groupadd -f www

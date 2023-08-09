@@ -7,9 +7,9 @@ categories:
  - 编译报错
 ---
 
-## Exception: Unable to find suitable Visual Studio toolchain. Please run `flutter doctor` for more details.
+## Exception: Unable to find suitable Visual Studio toolchain. Please run `flutter doctor` for more details
 
-- https://flutter.cn/docs/development/platform-integration/desktop
+- <https://flutter.cn/docs/development/platform-integration/desktop>
 
 ```shell
 flutter channel
@@ -20,15 +20,15 @@ flutter channel
 flutter doctor
 ```
 
-## Failed to load font Roboto at https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5WZLCzYlKw.ttf
+## Failed to load font Roboto at <https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5WZLCzYlKw.ttf>
 
 换个网络 或者 修改字体<未验证>
 
-- https://blog.csdn.net/longlyboyhe/article/details/114268663
+- <https://blog.csdn.net/longlyboyhe/article/details/114268663>
 
-## 卡死在 Running Gradle task 'assembleDebug'...
+## 卡死在 Running Gradle task 'assembleDebug'
 
-- https://flutteragency.com/solve-running-gradle-task-assembledebug/
+- <https://flutteragency.com/solve-running-gradle-task-assembledebug/>
 
 > If you are on Windows: try adding firewall exceptions to your Android Studio follow below steps:
 
@@ -47,7 +47,7 @@ cd android
 
 ## Flutter 3.3.6 中FlatButton, RaisedButton, & OutlineButton找不到
 
-- https://blog.csdn.net/MrLizuo/article/details/127635511
+- <https://blog.csdn.net/MrLizuo/article/details/127635511>
 
 ```dart
 // Code before migration:

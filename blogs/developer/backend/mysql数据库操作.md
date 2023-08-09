@@ -8,22 +8,28 @@ categories:
 ---
 
 ## mysql怎么查看表
+
 1. 查看当前数据库中的表
+
 ```mysql
 SHOW TABLES;
 ```
+
 2. 查看表结构
 show命令可以提供关于数据库、表、列，或关于服务器的状态信息。
+
 ```mysql
 show columns from 表名;
 ```
 
 ## 更新root用户权限为任意ip可登录
+
 ```mysql
 update user set host='%' where user='root' and host='localhost';
 ```
 
 ## 数据库操作
+
 ```mysql
 mysql -u<用户名> -p<密码>
 drop DATABASE GinMasterReWi;
@@ -32,6 +38,7 @@ use GinMasterReWi;
 ```
 
 ## 常用show命令
+
 ```mysql
 # 显示二进制文件以及文件大小（需要开启二进制日志记录功能）
 SHOW {BINARY | MASTER} LOGS

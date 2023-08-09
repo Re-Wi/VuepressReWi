@@ -8,7 +8,8 @@ categories:
 ---
 
 ## 【已解决】Error: Failed to download metadata for repo ‘appstream‘: Cannot prepare internal mirrorlist
--  参考：https://blog.csdn.net/weixin_43252521/article/details/124409151
+
+- 参考：<https://blog.csdn.net/weixin_43252521/article/details/124409151>
 
 > ✨上面的报错信息意思是，从仓库 ‘appstream’ 下载元数据失败：由于镜像列表中没有 URL，不能准备内部镜像列表。
 
@@ -18,19 +19,26 @@ categories:
 🥎那么针对上面提到的第二种情况，给出的解决方法如下：
 
 1. 🔔 首先，进入到 yum 的 repos 目录
+
 ```shell
 cd /etc/yum.repos.d/
 ```
+
 2. 🔔其次，修改 centos 文件内容
+
 ```shell
 sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
 sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
 ```
+
 3. 🔔 然后，生成缓存更新（第一次更新，速度稍微有点慢，耐心等待两分钟左右）
+
 ```shell
 yum makecache
 ```
-🔔 最后，运行 yum update 
+
+🔔 最后，运行 yum update
+
 ```shell
 yum update -y
 ```

@@ -9,8 +9,8 @@ categories:
 
 ## 使用shell脚本提取package.json版本
 
-- http://www.longant.cn/zh-hans/node/6056
-- https://stackoverflow.com/questions/44833218/extract-package-json-version-using-shell-script
+- <http://www.longant.cn/zh-hans/node/6056>
+- <https://stackoverflow.com/questions/44833218/extract-package-json-version-using-shell-script>
 
 ```bash
 # 方法一
@@ -26,7 +26,7 @@ awk -F'"' '/"version": ".+"/{ print $4; exit; }' package.json
 
 ## git push -u 简单理解
 
-- https://blog.csdn.net/weixin_48321825/article/details/124431351
+- <https://blog.csdn.net/weixin_48321825/article/details/124431351>
 
 ```text
 第一次提交需要加 -u参数后，
@@ -34,12 +34,16 @@ awk -F'"' '/"version": ".+"/{ print $4; exit; }' package.json
 ```
 
 ## 分支操作
+
 ### 查看分支
+
 ```shell
 # git branch不带参数,列出本地已经存在的分支，并且在当前分支的前面用*标记，加上-a参数可以查看所有分支列表，包括本地和远程，远程分支一般会用红色字体标记出来
 git branch -a
 ```
+
 ### 切换分支
+
 ```shell
 # 其中远程分支为 origin/master
 # 本地分支为 master
@@ -47,7 +51,9 @@ git checkout master
 git checkout S32K146
 git checkout S32K148
 ```
+
 ### 新建分支并切换到指定分支
+
 ```shell
 # git checkout -b 本地分支名 origin/远程分支名
 # 当参数设置为“-b”时，可以在新分支创建的同时切换分支
@@ -55,18 +61,25 @@ git checkout -b S32K146 origin/S32K146
 git checkout -b S32K148 origin/S32K148
 git checkout -b Vue3MasterReWi origin/Vue3MasterReWi
 ```
+
 ### 把远程分支拉到本地
+
 ```shell
 git fetch origin S32K146
 git fetch origin S32K148
 ```
+
 ### 远程分支上的内容都拉取到本地
+
 ```shell
 git pull origin S32K146
 git pull origin S32K148
 ```
+
 ## Commit code for multiple people
+
 ### git pull 可用
+
 ```shell
 # 先查看状态，是否有改动
 git status
@@ -89,7 +102,9 @@ git push -u origin HEAD:master
 # 再次查看状态，看是否还有文件没推送
 git status
 ```
+
 ### git fetch 不好用
+
 ```shell
 # 获取最新代码到本地【获取远端的origin/master分支】
 git fetch origin master
@@ -110,13 +125,17 @@ git push -u origin HEAD:master
 # 再次查看状态，看是否还有文件没推送
 git status
 ```
+
 ## 修改远程提交
-> 参考：https://blog.csdn.net/Zsago/article/details/73618279
+>
+> 参考：<https://blog.csdn.net/Zsago/article/details/73618279>
 
 ## 删除(分两种情况)
-> 分两种情况 参考： https://www.jb51.net/article/253630.htm
+>
+> 分两种情况 参考： <https://www.jb51.net/article/253630.htm>
 
 ### 1. 删除最后一次提交
+
 ```shell
 # 第一步：回滚上一次提交
 git reset --hard HEAD^
@@ -124,8 +143,11 @@ git reset --hard HEAD^
 git push origin master -f
 # 由于本地reset之后本地库落后于远程几个版本，所以需要使用-f强制提交。
 ```
+
 ### 2. 删除指定commit提交（非最后一次提交）
-> git log ：https://blog.csdn.net/qq_34246965/article/details/108414930
+>
+> git log ：<https://blog.csdn.net/qq_34246965/article/details/108414930>
+
 ```shell
 # 第一步：查看提交日志，获取要删除记录commit--2的前一次提交commit--1的提交ID
 # 特别提示： rebase -i的ID一定是删除记录的前一次的提交ID
@@ -136,7 +158,9 @@ git log
 ```
 
 ## git仓库迁移
-> https://blog.csdn.net/qq_42670703/article/details/123369326
+>
+> <https://blog.csdn.net/qq_42670703/article/details/123369326>
+
 ```shell
 # 1. 随便找个文件夹，从原地址克隆一份裸版本库
 git clone --bare 旧的git地址
@@ -150,6 +174,7 @@ git clone 新的git地址
 ```
 
 ## 强制提交
+
 ```shell
 git clone <仓库>
 git reset --hard HEAD^

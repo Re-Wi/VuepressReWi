@@ -21,10 +21,11 @@ apt install gcc
 gcc -v
 ```
 
-## System has not been booted with systemd as init system (PID 1). Can't operate.
+## System has not been booted with systemd as init system (PID 1). Can't operate
+
 Failed to connect to bus: Host is down
 
-- https://blog.csdn.net/xiao_yi_xiao/article/details/120672705
+- <https://blog.csdn.net/xiao_yi_xiao/article/details/120672705>
 
 ```shell
 sudo apt install systemctl

@@ -871,7 +871,7 @@ func GetMaxNum[T int | int8](a, b T) T {
 
 ## 使用Go Module时go get更新依赖包的方法记录
 
-- https://www.jianshu.com/p/84d4c4358710
+- <https://www.jianshu.com/p/84d4c4358710>
 
 ```bash
 go get -u
@@ -880,7 +880,7 @@ go mod tidy
 
 ## Go语言获取文件的文件路径、文件名、扩展名
 
-- https://blog.csdn.net/u012183747/article/details/73666363
+- <https://blog.csdn.net/u012183747/article/details/73666363>
 
 ```go
 import (

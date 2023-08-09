@@ -9,7 +9,7 @@ categories:
 
 ## Flutter 常用表单介绍
 
-- https://juejin.cn/post/6844904162312863752
+- <https://juejin.cn/post/6844904162312863752>
 
 ```dart
 
@@ -17,17 +17,17 @@ categories:
 
 ## Flutter TextField限制输入仅数字，字母，以及数字键盘，搜索完成设置
 
-- https://blog.csdn.net/jia635/article/details/117120444
-- https://www.jianshu.com/p/1e6d37ee3b25
+- <https://blog.csdn.net/jia635/article/details/117120444>
+- <https://www.jianshu.com/p/1e6d37ee3b25>
 
 ## Flutter | 你真的会用 Slider 组件吗
 
-- https://juejin.cn/post/6959703051586240549
+- <https://juejin.cn/post/6959703051586240549>
 
 ## flutter - jsonEncode（DateTime）
 
-- https://blog.csdn.net/win7583362/article/details/107465371
-- https://blog.csdn.net/hxl517116279/article/details/88378238
+- <https://blog.csdn.net/win7583362/article/details/107465371>
+- <https://blog.csdn.net/hxl517116279/article/details/88378238>
 
 ```dart
   //padLeft(int width,String padding)：如果字符串长度小于width，在左边填充padding
@@ -36,5 +36,5 @@ categories:
 
 ## Flutter文件上传和下载
 
-- https://www.jianshu.com/p/e867567dd2ff
-- https://bytenote.net/article/164278401387986945
+- <https://www.jianshu.com/p/e867567dd2ff>
+- <https://bytenote.net/article/164278401387986945>

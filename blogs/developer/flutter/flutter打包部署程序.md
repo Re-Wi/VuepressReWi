@@ -9,10 +9,10 @@ categories:
 
 ## 使用 InnoSetup 将 Flutter 打包成 exe 安装程序
 
-- https://juejin.cn/post/7108928269285589000
-- https://blog.csdn.net/erone/article/details/122695816
+- <https://juejin.cn/post/7108928269285589000>
+- <https://blog.csdn.net/erone/article/details/122695816>
 
-1. 下载Inno Setup Inno Setup Downloads (jrsoftware.org): https://jrsoftware.org/isdl.php#stable
+1. 下载Inno Setup Inno Setup Downloads (jrsoftware.org): <https://jrsoftware.org/isdl.php#stable>
 
 2. 打开Inno Setup，选择 "Create a New Script file using the Script Wizard" 后点击 OK
 3. 空选，点next
@@ -30,10 +30,10 @@ categories:
    这里反选后点next
 10. 直接next
 11. 这里填写证书。由于我只是做了个小工具并不是很在乎版权，直接点了next。大家可以按需填写，License生成方式应该有大把教程。
-12.  直接next
-13.  直接next。（个人认为作用可能不是很大，我想选中文但是没找到选项...）
+12. 直接next
+13. 直接next。（个人认为作用可能不是很大，我想选中文但是没找到选项...）
 14. 选择脚本存储位置和生成文件名称
-    这里选择输出的路径、名字和icon，按需填写。 
+    这里选择输出的路径、名字和icon，按需填写。
 15. 直接next
 16. 第十二步跳转的下一步点击finish会有如下界面，这里选择是。
 17. 然后会询问是否选择目录，我们选择否后就会开始编译。

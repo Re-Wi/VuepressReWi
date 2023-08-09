@@ -9,7 +9,7 @@ categories:
 
 ## 简单配置
 
-- https://www.cnblogs.com/zhongweiv/p/nginx_conf.html
+- <https://www.cnblogs.com/zhongweiv/p/nginx_conf.html>
 
 ```nginx
 #user nobody;
@@ -20,49 +20,51 @@ pid /run/nginx.pid;
  
  
 events {
-		worker_connections 1024;
+  worker_connections 1024;
 }
  
  
 http {
-		include			mime.types;
-		default_type	application/octet-stream;
-		
-		sendfile        on;
-		#tcp_nopush     on;
+  include   mime.types;
+  default_type application/octet-stream;
+  
+  sendfile        on;
+  #tcp_nopush     on;
  
-		#keepalive_timeout  0;
-		keepalive_timeout  65;
+  #keepalive_timeout  0;
+  keepalive_timeout  65;
  
-		#nginx默认server，测试使用，不需要时可以删除
-		server {
-				listen		80;
-				server_name	localhost;
+  #nginx默认server，测试使用，不需要时可以删除
+  server {
+    listen  80;
+    server_name localhost;
  
-				location / {
-						default_type text/html;
-						return 200 'This is nginx!';  
-				}
+    location / {
+      default_type text/html;
+      return 200 'This is nginx!';  
+    }
  
-				error_page 404 /404.html;
-				location = /40x.html {
-				}
+    error_page 404 /404.html;
+    location = /40x.html {
+    }
  
-				error_page 500 502 503 504 /50x.html;
-				location = /50x.html {
-				}
-		}
+    error_page 500 502 503 504 /50x.html;
+    location = /50x.html {
+    }
+  }
 }
 ```
 
 ## 配置多个conf文件
-- https://blog.csdn.net/M_Jin/article/details/105003921
-- https://www.cnblogs.com/zhongweiv/p/nginx_conf.html
+
+- <https://blog.csdn.net/M_Jin/article/details/105003921>
+- <https://www.cnblogs.com/zhongweiv/p/nginx_conf.html>
 
 我的`nginx.conf`路径：/etc/nginx/nginx.conf
 在 /etc/nginx/下创建 conf.d/，用来存 自定义conf文件
 
 在 nginx.conf  加入神秘代码
+
 ```nginx
 # 配置允许运行nginx服务器的用户和用户组
 #user  nobody;
@@ -255,7 +257,7 @@ http {
 
 ## Nginx 命令
 
-- https://www.nginx.org.cn/article/detail/476/
+- <https://www.nginx.org.cn/article/detail/476/>
 
 ```shell
 nginx -s quit #优雅地停止Nginx服务（即处理完所有请求后再停止服务）
@@ -271,7 +273,7 @@ nginx -c XXX.conf
 
 ## Vue 项目 配置
 
-- https://blog.csdn.net/weixin_43314519/article/details/115151858
+- <https://blog.csdn.net/weixin_43314519/article/details/115151858>
 
 ```nginx
 upstream XXX_backend {

@@ -9,8 +9,8 @@ categories:
 
 ## [X] Windows Version (Unable to confirm if installed Windows version is 10 or greater)
 
-- https://blog.csdn.net/qq_39656068/article/details/128880382
-- https://github.com/flutter/flutter/issues/117890
+- <https://blog.csdn.net/qq_39656068/article/details/128880382>
+- <https://github.com/flutter/flutter/issues/117890>
 
 ```shell
 flutter channel
@@ -21,11 +21,11 @@ flutter channel
 flutter doctor
 ```
 
-## X Unable to find bundled Java version.
+## X Unable to find bundled Java version
 
 | HTTP host not reachable.
 
-- https://blog.csdn.net/qq_39656068/article/details/128880382
+- <https://blog.csdn.net/qq_39656068/article/details/128880382>
 
 ```shell
 flutter channel

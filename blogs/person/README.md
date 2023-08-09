@@ -22,6 +22,6 @@ categories:
 
 通过邮箱或者下方评论留言都可，记得留下你的邮箱便于及时收到回复
 
-邮箱: rejoiceWindow@yeah.net
+邮箱: <rejoiceWindow@yeah.net>
 
 #### PS

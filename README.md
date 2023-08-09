@@ -67,6 +67,7 @@ theme-cli init
 ```
 
 ## 手动安装
+
 ```bash
 npm install vuepress@next vuepress-theme-reco@next --save-dev
 
@@ -74,19 +75,22 @@ npm install vuepress@next vuepress-theme-reco@next --save-dev
 yarn add vuepress@next vuepress-theme-reco@next
 ```
 
-# ReWi 怿窗の博客
+## **_ReWi 怿窗の博客_**
 
 ## 把项目从gitee上克隆下来
+
 ```shell
 git clone git@github.com:Re-Wi/VuepressReWi.git
 ```
 
 ## 进入项目目录
+
 ```shell
 cd VuepressReWi
 ```
 
 ## 安装依赖
+
 ```shell
 yarn  
 # or
@@ -96,6 +100,7 @@ cnpm install
 ```
 
 ## 启动项目
+
 ```shell
 yarn dev 
 # or
@@ -107,6 +112,7 @@ cnpm run dev
 ## 其他
 
 ## 生成静态文件
+
 ```shell
 yarn build 
 # or
@@ -116,6 +122,7 @@ cnpm run build
 ```
 
 ## 运行发布命令:右键，Git Bush Here
+
 ```shell
 yarn deploy 
 # or
@@ -125,6 +132,7 @@ cnpm run deploy
 ```
 
 ## 提交代码
+
 ```shell
 yarn push 
 # or

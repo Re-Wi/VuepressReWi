@@ -19,7 +19,7 @@ apt-get install -y golang
 
 - <https://blog.csdn.net/liangcsdn111/article/details/115405223>
 - <https://blog.csdn.net/dlh918/article/details/127524625>
-- https://studygolang.com/dl
+- <https://studygolang.com/dl>
 
 ### 1. 下载安装包
 

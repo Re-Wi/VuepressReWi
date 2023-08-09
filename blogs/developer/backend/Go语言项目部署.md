@@ -9,10 +9,10 @@ categories:
 
 ## supervisor
 
-- https://zhuanlan.zhihu.com/p/266899863
-- https://blog.csdn.net/qq_33229176/article/details/113055364
-- https://www.liwenzhou.com/posts/Go/deploy-in-docker/
-- https://blog.csdn.net/zzhongcy/article/details/105071018
+- <https://zhuanlan.zhihu.com/p/266899863>
+- <https://blog.csdn.net/qq_33229176/article/details/113055364>
+- <https://www.liwenzhou.com/posts/Go/deploy-in-docker/>
+- <https://blog.csdn.net/zzhongcy/article/details/105071018>
 
 ### 安装
 
@@ -59,6 +59,7 @@ program：项目名称
 command 执行命令 使用go build -o KitReWi 编译后文件路径
 
 注：分号（;）开头的配置表示注释
+
 ```conf
 [program:KitReWi]  ;程序名称
 user=root  ;执行程序的用户
@@ -78,7 +79,8 @@ stderr_logfile_backups=10
 stderr_capture_maxbytes=1MB
 stopsignal=INT
 ```
-### 启动服务 
+
+### 启动服务
 
 ```shell
 supervisorctl start KitReWi

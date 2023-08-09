@@ -10,7 +10,7 @@ categories:
 
 ## Gzip 压缩
 
-- https://www.cnblogs.com/yayujs/p/16043639.html
+- <https://www.cnblogs.com/yayujs/p/16043639.html>
 
 > 开启 Gzip 压缩将会极大的提高网站加载速度，如果服务器用的是按流量付费，就更是必须要做的内容。
 > 如果使用的是 Nginx，由于 Nginx 内置 Gzip 压缩模块，可以直接开启：
