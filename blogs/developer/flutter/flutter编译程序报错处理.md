@@ -29,6 +29,7 @@ flutter doctor
 ## 卡死在 Running Gradle task 'assembleDebug'
 
 - <https://flutteragency.com/solve-running-gradle-task-assembledebug/>
+- <https://blog.csdn.net/qq_43596067/article/details/107710915>
 
 > If you are on Windows: try adding firewall exceptions to your Android Studio follow below steps:
 
