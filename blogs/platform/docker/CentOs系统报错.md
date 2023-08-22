@@ -2,9 +2,11 @@
 title: CentOs系统报错
 date: 2023-01-27 11:00:00
 tags:
- - CentOs
-categories:
  - 系统报错
+ - centos
+categories:
+ - docker
+ - virtual-platform
 ---
 
 ## 【已解决】Error: Failed to download metadata for repo ‘appstream‘: Cannot prepare internal mirrorlist

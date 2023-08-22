@@ -3,8 +3,10 @@ title: flutter编译程序报错处理
 date: 2023-02-20 00:00:00
 tags:
  - flutter
-categories:
  - 编译报错
+categories:
+ - developer
+ - multi-platform
 ---
 
 ## Exception: Unable to find suitable Visual Studio toolchain. Please run `flutter doctor` for more details

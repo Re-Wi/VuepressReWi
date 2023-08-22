@@ -2,6 +2,10 @@
 title: 打赏
 date: 2023-07-27 00:30:00
 isShowComments: false
+tags:
+ - Reward
+categories:
+ - person
 ---
 ### 说明
 

@@ -2,7 +2,7 @@
 title: '关于我'
 date: 2020-06-14 22:38:39
 tags:
- - person
+ - author
 categories:
  - person
 ---
@@ -14,7 +14,7 @@ categories:
 
 ### 自我介绍
 
-我是谁？！**怿窗** 实在不知道该说些什么
+我是谁？！**怿窗** **ReWi** **RejoiceWindow** 实在不知道该说些什么
 
 ### 未来计划
 

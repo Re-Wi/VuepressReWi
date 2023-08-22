@@ -3,8 +3,10 @@ title: vuepress部署优化
 date: 2023-03-26 00:00:00
 tags:
  - vuepress
-categories:
  - 部署优化
+categories:
+ - developer
+ - Web
 ---
 
 

@@ -77,7 +77,7 @@ yarn add vuepress@next vuepress-theme-reco@next
 
 ## **_ReWi 怿窗の博客_**
 
-## 把项目从gitee上克隆下来
+## 把项目从github上克隆下来
 
 ```shell
 git clone git@github.com:Re-Wi/VuepressReWi.git

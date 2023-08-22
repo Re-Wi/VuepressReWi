@@ -2,9 +2,11 @@
 title: Go语言项目部署
 date: 2023-03-26 02:00:00
 tags:
+ - 项目部署
  - Go
 categories:
- - 项目部署
+ - developer
+ - backend tool
 ---
 
 ## supervisor

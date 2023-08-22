@@ -2,9 +2,11 @@
 title: Docker使用Ubuntu容器参考
 date: 2023-02-28 16:30:00
 tags:
+ - ubuntu
  - backend
 categories:
- - Docker
+ - docker
+ - virtual-platform
 ---
 
 ## Docker 创建

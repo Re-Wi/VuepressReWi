@@ -2,10 +2,12 @@
 title: 设置exe或者bat文件开机启动的方法
 date: 2023-08-16 11:00:00
 tags:
- - Windows
+ - windows 10
+ - windows 11
  - 开机自启动 
 categories:
- - OS
+ - operating-system
+ - windows
 ---
 
 ## 前言

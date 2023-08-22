@@ -1,10 +1,11 @@
 ---
-title: Linux中的虚拟设备
+title: Linux命令
 date: 2023-08-09 15:00:00
 tags:
- - Linux
+ - command line
 categories:
- - OS
+ - operating-system
+ - linux
 ---
 
 ## linux shell 时间格式化

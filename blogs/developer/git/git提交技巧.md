@@ -2,9 +2,11 @@
 title: Git提交技巧
 date: 2023-02-20 00:00:00
 tags:
+ - 提交技巧
  - Git
 categories:
- - 提交技巧
+ - developer
+ - code repository
 ---
 
 ## 使用shell脚本提取package.json版本

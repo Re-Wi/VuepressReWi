@@ -2,9 +2,11 @@
 title: Go开发参考
 date: 2023-03-02 00:00:00
 tags:
+ - 开发参考
  - Go
 categories:
- - 开发参考
+ - developer
+ - programming language
 ---
 
 ## go mod 使用方法

@@ -3,8 +3,10 @@ title: mysql数据库操作
 date: 2023-01-27 11:00:00
 tags:
  - mysql
-categories:
  - 数据库操作
+categories:
+ - developer
+ - backend tool
 ---
 
 ## mysql怎么查看表

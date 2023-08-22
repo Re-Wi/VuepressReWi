@@ -4,7 +4,8 @@ date: 2023-03-14 00:00:00
 tags:
  - flutter
 categories:
- - 打包部署
+ - developer
+ - multi-platform
 ---
 
 ## 使用 InnoSetup 将 Flutter 打包成 exe 安装程序

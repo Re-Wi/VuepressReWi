@@ -4,7 +4,8 @@ date: 2023-02-20 00:00:00
 tags:
  - flutter
 categories:
- - 安装报错
+ - developer
+ - multi-platform
 ---
 
 ## [X] Windows Version (Unable to confirm if installed Windows version is 10 or greater)

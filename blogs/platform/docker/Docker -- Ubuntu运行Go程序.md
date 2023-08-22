@@ -2,11 +2,12 @@
 title: Docker -- Ubuntu运行Go程序
 date: 2023-02-28 16:40:00
 tags:
- - Go
- - Docker
- - Ubuntu
-categories:
  - 程序安装
+ - go
+ - ubuntu
+categories:
+ - docker
+ - virtual-platform
 ---
 
 ## Ubuntu 安装go（命令方式）

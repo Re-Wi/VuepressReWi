@@ -2,9 +2,12 @@
 title: Nginx 配置
 date: 2023-02-20 00:00:00
 tags:
- - Nginx
-categories:
  - 项目部署
+ - Nginx
+ - web
+categories:
+ - developer
+ - backend tool
 ---
 
 ## 简单配置

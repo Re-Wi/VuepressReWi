@@ -2,9 +2,11 @@
 title: Ubuntu系统报错
 date: 2023-02-28 19:00:00
 tags:
- - Ubuntu
-categories:
  - 系统报错
+ - ubuntu
+categories:
+ - docker
+ - virtual-platform
 ---
 
 ## cgo: C compiler "gcc" not found: exec: "gcc": executable file not found in $PATH

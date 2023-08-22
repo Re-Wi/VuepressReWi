@@ -3,8 +3,10 @@ title: Vuepress操作项目报错处理
 date: 2023-02-20 00:00:00
 tags:
  - Vuepress
+ - 项目报错
 categories:
- - 报错处理
+ - developer
+ - Web
 ---
 
 ## X [ERROR] Could not read from file: C:\XXX\vue\dist\vue.runtime.esm-bundler.js

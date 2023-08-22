@@ -2,9 +2,11 @@
 title: Linux中的虚拟设备
 date: 2023-08-09 14:00:00
 tags:
- - Linux
+ - command line
+ - 虚拟设备
 categories:
- - OS
+ - operating-system
+ - linux
 ---
 
 > 参考：<https://blog.csdn.net/sinat_26058371/article/details/86754683>
