@@ -1,8 +1,11 @@
 export const series = {
-  '/blogs/developer/':[
-    
+  '/blogs/developer/': [{
+    text: '开发者',
+    icon: 'Language',
+    children: ['/blogs/developer/dart/', '/blogs/developer/backend/'],
+  }
   ],
-  '/blogs/person/':[
+  '/blogs/person/': [
     'README.md'
   ],
   '/docs/theme-reco/': [

@@ -68,7 +68,7 @@ export const themeConfig = {
   authorAvatar: "/head.png",
   docsRepo: 'https://github.com/Re-Wi/VuepressReWi',
   docsBranch: 'master',
-  docsDir: '',
+  docsDir: '.',
   lastUpdatedText: '',
 
   // 主题默认将 /.vuepress/vue-previews 下面的 .vue 组件进行了全局注册，所以需要预览的组件请放在此目录下，注意：文件名不允许有 - _。
