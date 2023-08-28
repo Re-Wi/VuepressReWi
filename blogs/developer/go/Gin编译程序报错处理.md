@@ -3,7 +3,7 @@ title: Gin编译程序报错处理
 date: 2023-02-20 00:00:00
 tags:
  - 编译报错
- - Gin
+ - gin
 categories:
  - developer
  - programming language

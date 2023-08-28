@@ -29,3 +29,18 @@ categories:
 |Flutter 精仿抖音|视频| 仿写抖音的flutter app。主要实现了看视频功能，可以非常流畅的刷视频，左右滑，点小爱心。 当前支持了flutter_web，但是在移动端浏览器的体验非常有限。|<https://github.com/mjl0602/flutter_tiktok>| |
 | | | | | |
 | | | | | |
+
+## GUI
+
+|标题|分类|说明|链接|备注|
+|:--:|:--:|:--:|:--:|:--:|
+|Flutter Gallery|UI| Flutter Gallery 是一个由Flutter团队自己开发的开源应用。它是Flutter能力的全面展示，展示了各种UI组件和设计模式。该应用程序提供了如何实现不同部件和功能的真实例子，使其成为初学者和经验丰富的Flutter开发人员的绝佳资源。Flutter Gallery简洁而直观的界面使其易于浏览和探索Flutter广泛的 widget 目录。|<https://github.com/flutter/gallery>| |
+| | | | | |
+| | | | | |
+
+## 经济
+
+|标题|分类|说明|链接|备注|
+|:--:|:--:|:--:|:--:|:--:|
+| | | | | |
+| | | | | |

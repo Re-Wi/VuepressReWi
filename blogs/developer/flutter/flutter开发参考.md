@@ -3,10 +3,20 @@ title: flutter开发参考
 date: 2023-02-27 00:00:00
 tags:
  - flutter
+ - 开发参考
 categories:
  - developer
  - multi-platform
 ---
+
+## 完整教程|书籍
+
+> 《Flutter实战·第二版》： <https://book.flutterchina.club/>
+> Flutter实战 : <https://www.w3cschool.cn/flutter_in_action/flutter_in_action-kxgn3eyz.html>
+
+## 状态管理指南篇——Provider
+
+> <https://juejin.cn/post/6844903864852807694#heading-1>
 
 ## Flutter 常用表单介绍
 
