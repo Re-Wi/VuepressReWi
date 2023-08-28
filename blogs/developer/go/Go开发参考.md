@@ -845,9 +845,11 @@ func GetMaxNum[T int | int8](a, b T) T {
 
 - <https://www.zhihu.com/tardis/sogou/art/354147069>
 
-## Golang 管理go类库版本
+## Golang 管理go类库版本 包及版本管理
 
 - <https://www.zhihu.com/tardis/sogou/art/355318345>
+- <https://blog.csdn.net/lyp256/article/details/115078745>
+- <https://www.zhihu.com/tardis/sogou/art/354147069>
 
 ## go 私有模块管理
 
@@ -897,3 +899,7 @@ fmt.Println(paths, fileName) //获取路径中的目录及文件名 E:\data\  te
 fmt.Println(filepath.Base(files)) //获取路径中的文件名test.txt
 fmt.Println(path.Ext(files)) //获取路径中的文件的后缀 .txt
 ```
+
+## 跨平台gui
+
+> <https://www.cnblogs.com/jiftle/p/15315488.html>
