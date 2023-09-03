@@ -17,7 +17,7 @@ export const bulletin = {
       type: 'text',
       content: `
       <ul>
-      <li>1057492554 (Computer technology small white exchange area)</li>
+      <li>1057492554 (计算机技术小白交流区)</li>
       </ul>
       `,
       style: 'font-size: 12px;'
@@ -47,7 +47,11 @@ export const bulletin = {
       children: [
         {
           text: '打赏',
-          link: '/blogs/person/donate'
+          link: '/docs/AddressBook/donate'
+        },
+        {
+          text: '关于我',
+          link: '/docs/AddressBook/'
         }
       ]
     }

@@ -63,7 +63,7 @@ export const themeConfig = {
   style: "@vuepress-reco/style-default",
   // 自定义主题的基础色
   primaryColor: '#0C9CFF',
-  logo: '/favicon.ico',
+  logo: '/logo.png',
   author: 'ReWi',
   authorAvatar: "/head.png",
   docsRepo: 'https://github.com/Re-Wi/VuepressReWi',
