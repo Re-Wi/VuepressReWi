@@ -46,25 +46,7 @@ password:
   }
 
 </style>
-<script>
-  // 随机生成十六进制颜色值
-  function getRandomColor() {
-    var letters = "0123456789ABCDEF";
-    var color = "#";
-    for (var i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-  }
 
-  // 为每行添加随机颜色
-  window.onload = function() {
-    var rows = document.querySelectorAll("tbody tr");
-    rows.forEach(function(row) {
-      row.style.backgroundColor = getRandomColor();
-    });
-  }
-</script>
 <table>
   <thead>
     <tr>
