@@ -7,7 +7,7 @@ tags:
  - web
 categories:
  - developer
- - backend tool
+ - backend
 ---
 
 ## nginx: [emerg] getpwnam("www") failed in

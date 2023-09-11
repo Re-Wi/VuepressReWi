@@ -6,7 +6,7 @@ tags:
  - 数据库操作
 categories:
  - developer
- - backend tool
+ - backend
 ---
 
 ## mysql怎么查看表

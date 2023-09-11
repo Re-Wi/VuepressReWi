@@ -6,7 +6,7 @@ tags:
  - Go
 categories:
  - developer
- - backend tool
+ - backend
 ---
 
 ## supervisor

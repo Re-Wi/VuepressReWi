@@ -7,7 +7,7 @@ tags:
  - web
 categories:
  - developer
- - backend tool
+ - backend
 ---
 
 ## 简单配置
