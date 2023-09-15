@@ -89,7 +89,7 @@ date: 2023/09/12 17:00:00
       <td class="article">❌</td>
       <td class="article">❌</td>
       <td class="video"><a href="https://www.bilibili.com/video/BV1u8411q7Vs/">🔜</a></td>
-      <td class="video"><a href="https://weixin.qq.com/sph/AchS9Y"></a></td>
+      <td class="video"><LinkButton icon="/images/ShareReWi/platform_design-WechatVideo.png" text="详情" url="https://weixin.qq.com/sph/A2yibD" details="点击图标可放大 <br> 点击复制按钮，可复制链接到微信打开 <br> https://weixin.qq.com/sph/A2yibD" /></td>
       <td class="video"><a href="https://www.douyin.com/video/7278632005867212044">🔜</a></td>
       <td class="video"><a href="">🔜</a></td>
       <td class="video"><a href="">🔜</a></td>
@@ -106,7 +106,7 @@ date: 2023/09/12 17:00:00
       <td class="article">❌</td>
       <td class="article">❌</td>
       <td class="video"><a href="https://www.bilibili.com/video/BV1Uh4y1N7kN/">🔜</a></td>
-      <td class="video"><a href="https://weixin.qq.com/sph/AU0jxI"></a></td>
+      <td class="video"><LinkButton icon="/images/ShareReWi/provider_shopper-WeChatVideo.png" text="详情" url="https://weixin.qq.com/sph/AMs2Bs" details="点击图标可放大 <br> 点击复制按钮，可复制链接到微信打开 <br> https://weixin.qq.com/sph/AMs2Bs" /></td>
       <td class="video"><a href="https://www.douyin.com/video/7278631106528824587">🔜</a></td>
       <td class="video"><a href="">🔜</a></td>
       <td class="video"><a href="">🔜</a></td>

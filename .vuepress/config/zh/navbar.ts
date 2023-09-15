@@ -8,9 +8,9 @@ export const navbar = [
     children: [
       { text: '关于我', link: '/docs/AddressBook/' },
       { text: '打赏', link: '/docs/AddressBook/donate' },
-      { text: '分享怿窗', link: '/docs/ShareReWi/' },
     ]
   },
+  { text: '分享怿窗', link: '/docs/ShareReWi/', icon: 'Fire' },
   { text: '留言板', link: '/docs/message-board', icon: 'RequestQuote' },
   {
     text: 'Shortcut',
