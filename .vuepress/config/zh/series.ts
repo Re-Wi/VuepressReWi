@@ -9,4 +9,13 @@ export const series = {
       children: ['QQ', 'WeChat']
     }
   ],
+  '/docs/AddressBook/InvitationCode/': [{
+    text: '实用工具',
+    children: ['Tools.md'],
+  },
+  {
+    text: '赚钱平台',
+    children: ['Platforms.md'],
+  },
+  ],
 }
