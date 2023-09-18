@@ -76,37 +76,6 @@ password:
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>flutter示例程序之provider_shopper</td>
-      <td class="handle">❌</td>
-      <td class="handle">✔️</td>
-      <td class="handle"><a href="https://github.com/flutter/samples/tree/main/provider_shopper">开源项目</a></td>
-      <td class="article">[字节跳动-John](link)</td>
-      <td class="article">[字节跳动-John](link)</td>
-      <td class="article">[字节跳动-John](link)</td>
-      <td class="article">[字节跳动-John](link)</td>
-      <td class="video">[字节跳动-Alice](link)</td>
-      <td class="video">[字节跳动-John](link)</td>
-      <td class="video">[字节跳动-John](link)</td>
-      <td class="video">[字节跳动-John](link)</td>
-      <td class="video">[字节跳动-John](link)</td>
-      <td class="video">[字节跳动-John](link)</td>
-    </tr>
-    <tr>
-      <td>flutter示例程序之platform_design</td>
-     <td class="handle">❌</td>
-      <td class="handle">✔️</td>
-      <td class="handle"><a href="https://github.com/flutter/samples/tree/main/platform_design">开源项目</a></td>
-      <td class="article">[字节跳动-John](link)</td>
-      <td class="article">[字节跳动-John](link)</td>
-      <td class="article">[字节跳动-John](link)</td>
-      <td class="article">[字节跳动-John](link)</td>
-      <td class="video">[字节跳动-Alice](link)</td>
-      <td class="video">[字节跳动-John](link)</td>
-      <td class="video">[字节跳动-John](link)</td>
-      <td class="video">[字节跳动-John](link)</td>
-      <td class="video">[字节跳动-John](link)</td>
-      <td class="video">[字节跳动-John](link)</td>
-    </tr>
+    
   </tbody>
 </table>

@@ -71,10 +71,10 @@ date: 2023/09/12 17:00:00
       <th class="article">哔哩哔哩专栏</th>
       <th class="video">哔哩哔哩视频</th>
       <th class="video">微信小视频</th>
-      <th class="video">抖音</th>
-      <th class="video">抖音极速版</th>
-      <th class="video">抖音火山版</th>
-      <th class="video">西瓜视频</th>
+      <th class="video">抖音、抖音极速版、抖音火山版、西瓜视频</th>
+      <th class="video">支付宝生活号</th>
+      <th class="video">淘宝小视频</th>
+      <th class="video"></th>
     </tr>
   </thead>
   <tbody>
@@ -89,10 +89,12 @@ date: 2023/09/12 17:00:00
       <td class="article">❌</td>
       <td class="article">❌</td>
       <td class="video"><a href="https://www.bilibili.com/video/BV1u8411q7Vs/">🔜</a></td>
-      <td class="video"><LinkButton icon="/images/ShareReWi/platform_design-WechatVideo.png" text="详情" url="https://weixin.qq.com/sph/A2yibD" details="点击图标可放大 <br> 点击复制按钮，可复制链接到微信打开 <br> https://weixin.qq.com/sph/A2yibD" /></td>
-      <td class="video"><a href="https://www.douyin.com/video/7278632005867212044">🔜</a></td>
-      <td class="video"><a href="">🔜</a></td>
-      <td class="video"><a href="">🔜</a></td>
+      <td class="video"><LinkButton icon="/images/ShareReWi/platform_design-WechatVideo.png" text="详情" url="https://weixin.qq.com/sph/A2yibD" details="点击图标可放大 <br> 点击复制按钮，可复制链接到 微信 打开 <br> https://weixin.qq.com/sph/A2yibD" /></td>
+      <td class="video"><LinkButton icon="/images/ShareReWi/platform_design-DouyinVideo.png" text="详情" url="8.23 sRK:/ flutter示例程序之platform_design # 编程 # 软件 # 程序编程 # 拿捏秋日的轻盈感 Web没有体验成功，Android端看着还可以 更多内容，可在官网获取：flutter.cn/ 或访问我的个人主页：rewi.cc/  https://v.douyin.com/iex8EPS2/ 复制此链接，打开Dou音搜索，直接观看视频！" details="点击图标可放大 <br> 点击复制按钮，可复制 口令和链接 到抖音打开 <br> 8.23 sRK:/ flutter示例程序之platform_design # 编程 # 软件 # 程序编程 # 拿捏秋日的轻盈感 Web没有体验成功，Android端看着还可以 更多内容，可在官网获取：flutter.cn/ 或访问我的个人主页：rewi.cc/  https://v.douyin.com/iex8EPS2/ 复制此链接，打开Dou音搜索，直接观看视频！" /></td>
+      <td class="video"><a href="https://ur.alipay.com/_3oF0vuU2zqgDFpPzTjKb4T">🔜</a></td>
+      <td class="video"><LinkButton icon="/images/ShareReWi/platform_design-TaobaoVideo.jpg" text="详情" url="【淘宝】https://m.tb.cn/h.5fcANjI?tk=fvt0dzxqpx2 CZ3457 「platform_design」
+点击链接直接打开 或者 淘宝搜索直接打开" details="点击图标可放大 <br> 点击复制按钮，可复制链接到 淘宝 打开 <br> 【淘宝】https://m.tb.cn/h.5fcANjI?tk=fvt0dzxqpx2 CZ3457 「platform_design」
+点击链接直接打开 或者 淘宝搜索直接打开" /></td>
       <td class="video"><a href="">🔜</a></td>
     </tr>
     <tr>
@@ -106,10 +108,12 @@ date: 2023/09/12 17:00:00
       <td class="article">❌</td>
       <td class="article">❌</td>
       <td class="video"><a href="https://www.bilibili.com/video/BV1Uh4y1N7kN/">🔜</a></td>
-      <td class="video"><LinkButton icon="/images/ShareReWi/provider_shopper-WeChatVideo.png" text="详情" url="https://weixin.qq.com/sph/AMs2Bs" details="点击图标可放大 <br> 点击复制按钮，可复制链接到微信打开 <br> https://weixin.qq.com/sph/AMs2Bs" /></td>
-      <td class="video"><a href="https://www.douyin.com/video/7278631106528824587">🔜</a></td>
-      <td class="video"><a href="">🔜</a></td>
-      <td class="video"><a href="">🔜</a></td>
+      <td class="video"><LinkButton icon="/images/ShareReWi/provider_shopper-WeChatVideo.png" text="详情" url="https://weixin.qq.com/sph/AMs2Bs" details="点击图标可放大 <br> 点击复制按钮，可复制链接到 微信 打开 <br> https://weixin.qq.com/sph/AMs2Bs" /></td>
+      <td class="video"><LinkButton icon="/images/ShareReWi/provider_shopper-DouyinVideo.png" text="详情" url="0.56 JiP:/ flutter示例程序之provider_shopper # 编程 # 拿捏秋日的轻盈感 了解了一下flutter，跨平台功能真不错 特别适合啥都懂一点的同学 Web端，Android端、Windows桌面端 体验成功 更多内容，可在官网获取：flutter.cn/ 或访问我的个人主页：rewi.ccs/  https://v.douyin.com/iexLWfTP/ 复制此链接，打开Dou音搜索，直接观看视频！" details="点击图标可放大 <br> 点击复制按钮，可复制 口令和链接 到抖音打开 <br> 0.56 JiP:/ flutter示例程序之provider_shopper # 编程 # 拿捏秋日的轻盈感 了解了一下flutter，跨平台功能真不错 特别适合啥都懂一点的同学 Web端，Android端、Windows桌面端 体验成功 更多内容，可在官网获取：flutter.cn/ 或访问我的个人主页：rewi.ccs/  https://v.douyin.com/iexLWfTP/ 复制此链接，打开Dou音搜索，直接观看视频！" /></td>
+      <td class="video"><a href="https://ur.alipay.com/_3R2LLWatZAK6kuk2TbpJzV">🔜</a></td>
+      <td class="video"><LinkButton icon="/images/ShareReWi/provider_shopper-TaobaoVideo.jpg" text="详情" url="【淘宝】https://m.tb.cn/h.54QehdN?tk=hCu1dzxJmOD CZ0001 「快速来手淘逛逛哦～provider_shoppe...」
+点击链接直接打开 或者 淘宝搜索直接打开" details="点击图标可放大 <br> 点击复制按钮，可复制链接到 淘宝 打开 <br>【淘宝】https://m.tb.cn/h.54QehdN?tk=hCu1dzxJmOD CZ0001 「快速来手淘逛逛哦～provider_shoppe...」
+点击链接直接打开 或者 淘宝搜索直接打开" /></td>
       <td class="video"><a href="">🔜</a></td>
     </tr>
   </tbody>
