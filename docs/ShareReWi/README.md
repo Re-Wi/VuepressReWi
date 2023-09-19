@@ -20,7 +20,6 @@ hideComments: false
   border: 2px solid #ddd; /* 设置表头单元格和数据单元格的边框宽度和颜色 */
   padding: 8px; /* 设置内边距，增加内容与边框之间的距离 */
   text-align: left;
-  /* position: relative; /* 使提示框相对于单元格定位 */
   }
   th {
   background-color: #f2f2f2; /* 设置表头背景颜色 */
@@ -28,24 +27,6 @@ hideComments: false
   }
   tr:nth-child(even) {
     background-color: #f2f2f2;
-  }
-  /* 创建气泡提示 */
-  td::before {
-  content: attr(data-tooltip); /* 使用data-tooltip属性的值作为提示文本 */
-  background-color: #333;
-  color: #fff;
-  padding: 5px;
-  border-radius: 5px;
-  position: absolute;
-  /* bottom: 100%; /* 将提示框定位在单元格上方 */
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s;
-  z-index: 1;
-  }
-  td:hover::before {
-  opacity: 1; /* 鼠标悬停时显示提示 */
   }
 </style>
 

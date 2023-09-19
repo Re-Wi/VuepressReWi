@@ -32,4 +32,4 @@ categories:
 
 <img style="width: 240px" :src="$withBase('/images/InvitationCode/taobaoXSP.jpg')" alt="抖音极速版">
 
-<LinkButton icon="/images/InvitationCode/taobaoXSP.jpg" text="手机快捷" url="97U4NbdzxnjKX https://m.tb.cn/h.5UnW6YD  CZ3457 最少0.3元，至高2500元！帮我助力，你也可以领~" details="点击图标可放大 <br> 点击复制按钮，可复制链接到 淘宝 打开 <br> 97U4NbdzxnjKX https://m.tb.cn/h.5UnW6YD  CZ3457 最少0.3元，至高2500元！帮我助力，你也可以领~" />
+<LinkButton icon="/images/InvitationCode/taobaoXSP.jpg" text="手机快捷" url="97U4NbdzxnjKX https://m.tb.cn/h.5UnW6YD  CZ3457 最少0.3元，至高2500元！帮我助力，你也可以领~" details="点击图标可放大 <br> 点击复制按钮，可复制链接到 淘宝 打开 <br> " />

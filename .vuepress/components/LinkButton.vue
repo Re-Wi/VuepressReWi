@@ -1,13 +1,14 @@
 <template>
     <div class="info-card">
         <div class="info-header">
-            <img :src="icon" alt="Icon" class="info-icon" />
+            <img v-if="icon" :src="icon" alt="Icon" class="info-icon" />
             <button class="info-button" @click="toggleDetails">{{ text }}</button>
             <div v-if="showDetails" class="info-details">
                 <!-- 使用 CSS 样式实现换行 -->
                 <!-- <p class="break-line">{{ details }}</p> -->
                 <!-- 使用 v-html 渲染详细说明，允许包含 <br> 标签 -->
                 <p v-html="details"></p>
+                <p>{{ url }}</p>
                 <button class="info-copy-button" @click="copyToClipboard(url)">
                     <p class="info-text">{{ buttonText }}</p>
                 </button>
