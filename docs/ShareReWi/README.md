@@ -107,4 +107,8 @@ hideComments: false
 
 <hr style="background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); height: 6px;border:1px solid blue;" >
 
+## [回收站](./RecycleBin.md)
+
+<hr style="background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); height: 6px;border:1px solid blue;" >
+
 - 文末可以评论
