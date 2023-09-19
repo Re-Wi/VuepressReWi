@@ -24,12 +24,57 @@ hideComments: false
   </thead>
   <tbody>
     <tr>
-      <td>云服务器Ubuntu 22.04 安装Docker</td>
+      <td>服务器Ubuntu 22.04 安装Docker</td>
+      <td class="hardware">❎</td>
+      <td class="software">❎</td>
+      <td class="other">❎</td>
+      <td class="article">✅</td>
+      <td class="video">✅</td>
+      <td class="remark">❎</td>
+    </tr>
+    <tr>
+      <td>内网穿透（有云服务器或公网IP）</td>
       <td class="hardware">❎</td>
       <td class="software">❎</td>
       <td class="other">❎</td>
       <td class="article">❎</td>
       <td class="video">❎</td>
+      <td class="remark">https://cv4d9788cn.feishu.cn/wiki/X00VwCtPKi5OJNkq9jWcI59tnGh</td>
+    </tr>
+    <tr>
+      <td>虚拟机简介</td>
+      <td class="hardware">❎</td>
+      <td class="software">❎</td>
+      <td class="other">❎</td>
+      <td class="article">❎</td>
+      <td class="video">❎</td>
+      <td class="remark">❎</td>
+    </tr>
+    <tr>
+      <td>什么是Docker</td>
+      <td class="hardware">❎</td>
+      <td class="software">❎</td>
+      <td class="other">❎</td>
+      <td class="article">❎</td>
+      <td class="video">❎</td>
+      <td class="remark">❎</td>
+    </tr>
+    <tr>
+      <td>Docker使用portainer可视化管理操作</td>
+      <td class="hardware">❎</td>
+      <td class="software">❎</td>
+      <td class="other">❎</td>
+      <td class="article">❎</td>
+      <td class="video">❎</td>
+      <td class="remark">❎</td>
+    </tr>
+    <tr>
+      <td>Docker使用Portainer CE可视化管理操作</td>
+      <td class="hardware">❎</td>
+      <td class="software">❎</td>
+      <td class="other">❎</td>
+      <td class="article">✅</td>
+      <td class="video">✅</td>
       <td class="remark">❎</td>
     </tr>
   </tbody>
