@@ -1,7 +1,7 @@
 {
   "name": "vuepress-rewi",
-  "version": "0.3.7",
-  "commit_m": "更新|新增 博客文档，加入一个小组件",
+  "version": "0.3.8",
+  "commit_m": "更新|新增 博客文档",
   "description": "怿窗の博客",
   "repository": "git@github.com:Re-Wi/VuepressReWi.git",
   "author": "ReWi <RejoiceWindow@yeah.net>",

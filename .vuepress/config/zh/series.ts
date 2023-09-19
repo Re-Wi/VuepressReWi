@@ -6,7 +6,8 @@ export const series = {
     },
     {
       text: '联系方式',
-      children: ['QQ', 'WeChat']
+      children: ['QQ', 'WeChat'],
+      collapsible: true // 默认展开，true 为折叠
     }
   ],
   '/docs/AddressBook/InvitationCode/': [{
@@ -18,4 +19,5 @@ export const series = {
     children: ['Platforms.md'],
   },
   ],
+  '/docs/ShareReWi/': ['视频平台.md', '图文平台.md', 'README.md'],
 }

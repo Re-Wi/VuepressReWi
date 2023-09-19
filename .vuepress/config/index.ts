@@ -28,7 +28,7 @@ export const themeConfig = {
       },
       // 当 autoAddCategoryToNavbar 为 true 时，则全部取默认值
       // autoAddCategoryToNavbar: true,
-      // 自动设置分类
+      // 自动设置系列
       autoSetSeries: true,
     },
     '/en/': {
@@ -56,7 +56,7 @@ export const themeConfig = {
       },
       // 当 autoAddCategoryToNavbar 为 true 时，则全部取默认值
       // autoAddCategoryToNavbar: true,
-      // 自动设置分类
+      // 自动设置系列
       autoSetSeries: true,
     }
   },
