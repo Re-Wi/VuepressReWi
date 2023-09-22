@@ -41,4 +41,5 @@ footer: # 底部模块的配置
   startYear: 2018
 ---
 
-- [ ] 邀请码 [入口](./docs/AddressBook/InvitationCode/)
+- [ ] 邀请码 [页面](./docs/AddressBook/InvitationCode/)
+- [ ] 邀请码 [入口](https://www.rewi.cc/docs/AddressBook/InvitationCode/)
