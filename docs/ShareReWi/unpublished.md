@@ -60,21 +60,21 @@ hideComments: false
       <td class="remark">❎</td>
     </tr>
     <tr>
-      <td>Docker使用portainer可视化管理操作</td>
-      <td class="hardware">❎</td>
-      <td class="software">❎</td>
-      <td class="other">❎</td>
-      <td class="article">❎</td>
-      <td class="video">❎</td>
-      <td class="remark">❎</td>
-    </tr>
-    <tr>
       <td>Docker使用Portainer CE可视化管理操作</td>
       <td class="hardware">❎</td>
       <td class="software">❎</td>
       <td class="other">❎</td>
       <td class="article">✅</td>
       <td class="video">✅</td>
+      <td class="remark">❎</td>
+    </tr>
+    <tr>
+      <td>Docker部署Nginx</td>
+      <td class="hardware">❎</td>
+      <td class="software">❎</td>
+      <td class="other">❎</td>
+      <td class="article">✅</td>
+      <td class="video">❎</td>
       <td class="remark">❎</td>
     </tr>
   </tbody>

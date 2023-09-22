@@ -1,5 +1,5 @@
 ---
-title: nginx运行报错处理
+title: Nginx运行报错处理
 date: 2023-02-20 00:00:00
 tags:
  - 报错处理

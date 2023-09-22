@@ -3,7 +3,7 @@ title: Ubuntu Server 18.04 网络设置
 date: 2023-08-28 17:00:00
 tags:
  - command line
- - ubuntu server 18.04
+ - ubuntu
  - 网络设置
 categories:
  - operating-system

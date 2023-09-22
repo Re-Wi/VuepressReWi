@@ -14,6 +14,10 @@ password:
 hideComments: false
 ---
 
+## 目录
+
+[[toc]]
+
 ## 1. 进入官网，获取最新安装信息
 
 [Portainer Community Edition (CE)](https://docs.docker.com/engine/install/ubuntu/)
