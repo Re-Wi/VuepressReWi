@@ -14,6 +14,10 @@ password:
 hideComments: false
 ---
 
+## 目录
+
+[[toc]]
+
 ## 1. 进入官网，获取最新安装信息
 
 [keycloak](https://www.keycloak.org/getting-started/getting-started-docker)

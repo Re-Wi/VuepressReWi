@@ -10,12 +10,14 @@ categories:
  - backend
 ---
 
-## supervisor
+## 目录
 
-- <https://zhuanlan.zhihu.com/p/266899863>
-- <https://blog.csdn.net/qq_33229176/article/details/113055364>
-- <https://www.liwenzhou.com/posts/Go/deploy-in-docker/>
-- <https://blog.csdn.net/zzhongcy/article/details/105071018>
+[[toc]]
+
+## supervisor 简介
+
+> Supervisor 是业界流行的一个通用的进程管理程序，它能将一个普通的命令行进程变为后台守护进程，并监控该进程的运行状态，当该进程异常退出时能将其自动重启。
+> Supervisor是一个进程控制系统. 它是一个C/S系统(注意: 其提供WEB接口给用户查询和控制), 它允许用户去监控和控制在类UNIX系统的进程. 它的目标与launchd, daemontools和runit有些相似, 但是与它们不一样的是, 它不是作为init(进程号pid是1)运行. 它是被用来控制进程, 并且它在启动的时候和一般程序并无二致.
 
 ### 安装
 
@@ -103,3 +105,10 @@ service supervisor stop # 停止supervisor服务
 service supervisor start # 启动supervisor服务
 supervisorctl stop|start program_name #启动或停止服务
 ```
+
+## 参考
+
+- [Go语言项目部署的那些方式](https://zhuanlan.zhihu.com/p/266899863)
+- [supervisor 守护 golang 进程](https://blog.csdn.net/qq_33229176/article/details/113055364)
+- [如何使用Docker部署Go Web应用](https://www.liwenzhou.com/posts/Go/deploy-in-docker/)
+- [supervisor配置和使用详解](https://blog.csdn.net/zzhongcy/article/details/105071018)

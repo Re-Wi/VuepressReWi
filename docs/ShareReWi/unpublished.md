@@ -77,5 +77,14 @@ hideComments: false
       <td class="video">❎</td>
       <td class="remark">❎</td>
     </tr>
+    <tr>
+      <td>Docker搭建Rancher平台</td>
+      <td class="hardware">❎</td>
+      <td class="software">❎</td>
+      <td class="other">❎</td>
+      <td class="article">✅</td>
+      <td class="video">❎</td>
+      <td class="remark">❎</td>
+    </tr>
   </tbody>
 </table>

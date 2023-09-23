@@ -9,6 +9,10 @@ categories:
  - backend
 ---
 
+## 目录
+
+[[toc]]
+
 ## mysql怎么查看表
 
 1. 查看当前数据库中的表

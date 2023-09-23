@@ -11,8 +11,8 @@ categories:
 
 ## Dart 类型转换
 
-- <https://blog.csdn.net/mqdxiaoxiao/article/details/102745734>
-- <https://blog.csdn.net/u014651417/article/details/119268593>
+- [Dart String转数值int或double](https://blog.csdn.net/mqdxiaoxiao/article/details/102745734)
+- [Dart 类型转换](https://blog.csdn.net/u014651417/article/details/119268593)
 
 ```dart
 // String转int
