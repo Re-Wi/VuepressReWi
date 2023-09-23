@@ -1,16 +1,13 @@
 ---
-title: XXX
+title: Docker中安装Appium
 date: 2023/09/19 16:00:00
 tags:
- - XXX
- - XXX
+ - 程序安装
+ - appium
+ - docker
 categories:
- - XXX
- - XXX
-# 设置多个密码
-password: 
- - 5cde5596ace9b1e212ab3ace1f083815
- - a5db2fd9def8a592756d4ca2b5301c20
+ - person
+ - helper
 hideComments: false
 ---
 
@@ -20,24 +17,24 @@ hideComments: false
 
 ## 1. 进入官网，获取最新安装信息
 
-[Portainer Community Edition (CE)](https://docs.docker.com/engine/install/ubuntu/)
+[appium](https://appium.io/docs/en/2.1/)
 
 
 :::: code-group
 ::: code-group-item 输入
 ```shell
-const foo = 'foo'
+
 ```
 :::
 ::: code-group-item 输出
 ```text
-const bar = 'bar'
+
 ```
 :::
 ::::
 
 ## 参考
 
-- XXX
+- [在Docker中安装安卓11、12+Appium【web端android】](https://juejin.cn/post/7162415019332730917)
 
 ## 附录

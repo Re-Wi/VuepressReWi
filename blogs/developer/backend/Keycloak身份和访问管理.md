@@ -32,7 +32,7 @@ sudo docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=
 :::
 ::: code-group-item 输出
 ```text
-const bar = 'bar'
+too much
 ```
 :::
 ::::
