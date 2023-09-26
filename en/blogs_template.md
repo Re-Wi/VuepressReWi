@@ -41,3 +41,5 @@ const bar = 'bar'
 - XXX
 
 ## 附录
+
+- [访问个人主页](https://www.rewi.cc/)

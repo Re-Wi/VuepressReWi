@@ -24,15 +24,6 @@ hideComments: false
   </thead>
   <tbody>
     <tr>
-      <td>服务器Ubuntu 22.04 安装Docker</td>
-      <td class="hardware">❎</td>
-      <td class="software">❎</td>
-      <td class="other">❎</td>
-      <td class="article">✅</td>
-      <td class="video">✅</td>
-      <td class="remark">❎</td>
-    </tr>
-    <tr>
       <td>内网穿透（有云服务器或公网IP）</td>
       <td class="hardware">❎</td>
       <td class="software">❎</td>
@@ -57,15 +48,6 @@ hideComments: false
       <td class="other">❎</td>
       <td class="article">❎</td>
       <td class="video">❎</td>
-      <td class="remark">❎</td>
-    </tr>
-    <tr>
-      <td>Docker使用Portainer CE可视化管理操作</td>
-      <td class="hardware">❎</td>
-      <td class="software">❎</td>
-      <td class="other">❎</td>
-      <td class="article">✅</td>
-      <td class="video">✅</td>
       <td class="remark">❎</td>
     </tr>
     <tr>
