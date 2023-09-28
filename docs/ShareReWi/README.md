@@ -68,6 +68,10 @@ hideComments: false
     background-color: #ff4500;
     color: #333;
   }
+  .article-Zhihu {
+    background-color: #0087ff;
+    color: #333;
+  }
   .article-Xiaohongshu {
     background-color: #ff0000;
     color: #333;

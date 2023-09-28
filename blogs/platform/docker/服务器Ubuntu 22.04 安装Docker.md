@@ -95,7 +95,7 @@ too much
 :::
 ::::
 
-### 4.2 Install the Docker packages.（选择安装包）
+## 4.2 Install the Docker packages.（选择安装包）
 
 :::: code-group
 ::: code-group-item 安装最新版
