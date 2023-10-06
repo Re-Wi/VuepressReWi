@@ -53,6 +53,14 @@ hideComments: false
     background-color: #ff8c00;
     color: white;
   }
+  .video-Xiaohongshu {
+    background-color: #ff0000;
+    color: white;
+  }
+  .video-Weibo {
+    background-color: #dc143c;
+    color: white;
+  }
 </style>
 ## [图文平台](./图文平台.md)
 <style>
@@ -78,6 +86,10 @@ hideComments: false
   }
   .article-Bilibili {
     background-color: #ff73b3;
+    color: #333;
+  }
+  .article-Weibo {
+    background-color: #dc143c;
     color: #333;
   }
 </style>
