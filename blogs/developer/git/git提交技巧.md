@@ -191,3 +191,31 @@ git add --all
 git commit -m "first commit"
 git push -u -f
 ```
+
+## Git清除贡献者信息和历史提交记录
+
+> https://blog.csdn.net/Liu_Wd/article/details/120910899
+> 注意：历史记录清除后无法回滚。目前这个仓库算是一个新的仓库，以后所有的修改只需要在现在基础上修改。
+> 总结：大概步骤就是把master分支复制，删除原有分支，用新的分支覆盖旧分支。从而完成分支替换，清除历史记录。
+
+```shell
+#1.Checkout
+# 检出新的分支
+# orphan参数用于创建没有commit记录的分支
+git checkout --orphan latest_branch
+#2.Add all the files
+# 添加分支的所有文件
+git add -A
+#3.Commit the changes
+#提交更改并写明提交描述
+git commit -am "这是我提交的描述"
+#4.Delete the branch
+#删除之前的主分支
+git branch -D master
+#5.Rename the current branch to master 
+#将当前这个分支重命名为master，是它变成主分支
+git branch -m master
+#6.Finally, force update your repository
+#最后，强制更新到主分支master
+git push -f origin master
+```

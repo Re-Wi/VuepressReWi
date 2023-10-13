@@ -34,7 +34,12 @@ export default defineUserConfig({
     // ...其他标签
     // ['script', { src: "/assets/js/jquery.js" }, ``],
     // ['script', { src: "/assets/js/jq3.5.1.js" }, ``],
-
+    // Google AdSense广告位
+    ['script', {
+      async: true,
+      src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6203557052821716",
+      crossorigin: "anonymous"
+    },],
     //百度统计
     ['script', {}, `
     var _hmt = _hmt || [];
