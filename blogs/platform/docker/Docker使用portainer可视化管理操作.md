@@ -15,7 +15,7 @@ hideComments: false
 
 ## 1. 进入官网，获取最新安装信息
 
-[Portainer Community Edition (CE)](https://docs.docker.com/engine/install/ubuntu/)
+[Portainer Community Edition (CE)](https://docs.portainer.io/start/install-ce/server/docker/linux)
 
 ## 2. Deployment（部署步骤）
 
@@ -114,3 +114,15 @@ https://localhost:9443
 ## 附录
 
 - [访问个人主页](https://www.rewi.cc/)
+
+## How do I remove Portainer?
+
+### Stop the Portainer container
+
+```
+sudo docker stop portainer
+```
+### Delete the Portainer container
+```
+sudo docker rm portainer
+```
