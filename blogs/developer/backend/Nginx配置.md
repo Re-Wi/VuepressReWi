@@ -2,13 +2,14 @@
 title: Nginx 配置
 date: 2023-02-20 00:00:00
 tags:
- - 项目部署
- - Nginx
- - web
+  - 项目部署
+  - Nginx
+  - web
 categories:
- - developer
- - backend
+  - developer
+  - backend
 ---
+
 ## 目录
 
 [[toc]]
@@ -20,40 +21,40 @@ categories:
 ```nginx
 #user nobody;
 worker_processes auto;
- 
+
 error_log /var/log/nginx/error.log;
 pid /run/nginx.pid;
- 
- 
+
+
 events {
   worker_connections 1024;
 }
- 
- 
+
+
 http {
   include   mime.types;
   default_type application/octet-stream;
-  
+
   sendfile        on;
   #tcp_nopush     on;
- 
+
   #keepalive_timeout  0;
   keepalive_timeout  65;
- 
+
   #nginx默认server，测试使用，不需要时可以删除
   server {
     listen  80;
     server_name localhost;
- 
+
     location / {
       default_type text/html;
-      return 200 'This is nginx!';  
+      return 200 'This is nginx!';
     }
- 
+
     error_page 404 /404.html;
     location = /40x.html {
     }
- 
+
     error_page 500 502 503 504 /50x.html;
     location = /50x.html {
     }
@@ -61,21 +62,21 @@ http {
 }
 ```
 
-## 配置多个conf文件
+## 配置多个 conf 文件
 
 - <https://blog.csdn.net/M_Jin/article/details/105003921>
 - <https://www.cnblogs.com/zhongweiv/p/nginx_conf.html>
 
 我的`nginx.conf`路径：/etc/nginx/nginx.conf
-在 /etc/nginx/下创建 conf.d/，用来存 自定义conf文件
+在 /etc/nginx/下创建 conf.d/，用来存 自定义 conf 文件
 
-在 nginx.conf  加入神秘代码
+在 nginx.conf 加入神秘代码
 
 ```nginx
 # 配置允许运行nginx服务器的用户和用户组
 #user  nobody;
 #user  www www;
-## 配置允许nginx进程生成的worker process数量，一般与CPU核数相等 
+## 配置允许nginx进程生成的worker process数量，一般与CPU核数相等
 worker_processes  2;
 
 ## worker进程最大打开文件数，解决"too many open files"问题
@@ -149,7 +150,7 @@ http {
     gzip_comp_level  2;#指定gzip压缩比，1 压缩比最小，处理速度最快；9 压缩比最大，传输速度快，但处理最慢，也比较消耗CPU资源
     gzip_types  text/plain application/x-javascript text/css application/xml;#指定压缩的类型，无论是否指定，“text/html”类型总是会被压缩
     gzip_vary  on;#该选项开启可以让前端的缓存服务器缓存经过gzip压缩的页面，例如，用Varnish缓存经过Nginx压缩的数据
-   
+
    #设定请求缓冲
     client_header_buffer_size    128k;
     large_client_header_buffers  4 128k;
@@ -165,7 +166,7 @@ http {
     proxy_busy_buffers_size   64k;
     proxy_temp_file_write_size  64k;
     # proxy_temp_path   /usr/local/nginx/proxy_temp 1 2;
-    
+
     server_tokens off;#隐藏Nginx版本号
 
     server {
@@ -175,14 +176,14 @@ http {
             root /mnt;
         }
     }
-    
+
     # 很重要的虚拟主机配置
     server {
         listen       80;
         server_name  www.rewi.cc;
-        
+
         charset utf-8;
-        
+
         root   /home/admin/www;
 
         #access_log  logs/host.access.log  main;
@@ -191,24 +192,24 @@ http {
         location / {
             root   html;
             index  index.jsp index.html index.htm;
-            # proxy_pass        http://backend;  
+            # proxy_pass        http://backend;
             proxy_redirect off;
             # 后端的Web服务器可以通过X-Forwarded-For获取用户真实IP
             proxy_set_header  Host  $host;
-            proxy_set_header  X-Real-IP  $remote_addr;  
+            proxy_set_header  X-Real-IP  $remote_addr;
             proxy_set_header  X-Forwarded-For  $proxy_add_x_forwarded_for;
             proxy_next_upstream error timeout invalid_header http_500 http_502 http_503 http_504;
         }
-        
+
         #静态文件，nginx自己处理，不去backend请求tomcat
-        location  ~* /download/ {  
-            root /home/admin/resource;  
+        location  ~* /download/ {
+            root /home/admin/resource;
         }
 
-        location ~ .*\.(gif|jpg|jpeg|bmp|png|ico|txt|js|css)$   
-        {   
-            root /home/admin/static;   
-            expires      7d; 
+        location ~ .*\.(gif|jpg|jpeg|bmp|png|ico|txt|js|css)$
+        {
+            root /home/admin/static;
+            expires      7d;
         }
 
         location /nginx_status {
@@ -218,7 +219,7 @@ http {
             deny all;
         }
 
-        
+
         #error_page  404              /404.html;
 
         # redirect server error pages to the static page /50x.html
@@ -243,15 +244,15 @@ http {
         #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
         #    include        fastcgi_params;
         #}
-        
-        
+
+
         # deny access to .htaccess files, if Apache's document root
         # concurs with nginx's one
         location ~ /\.ht {
             deny  all;
         }
-        location ~ ^/(WEB-INF)/ {   
-            deny all;   
+        location ~ ^/(WEB-INF)/ {
+            deny all;
         }
     }
      ## 其它虚拟主机，server 指令开始
@@ -298,7 +299,7 @@ server {
     # 项目根目录中指向项目首页
     index index.html;
 
-    client_max_body_size 20m; 
+    client_max_body_size 20m;
     client_body_buffer_size 128k;
 
     # 根请求会指向的页面
