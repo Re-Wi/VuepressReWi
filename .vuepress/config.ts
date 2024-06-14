@@ -42,13 +42,14 @@ export default defineUserConfig({
     },],
     //百度统计
     ['script', {}, `
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?d8079816f37f676c0158bc7b5a8500f7";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();`]
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?f9b376d5f830970f61cde16b210841d5";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    `]
   ],
   // site-level locales config
   locales: {
