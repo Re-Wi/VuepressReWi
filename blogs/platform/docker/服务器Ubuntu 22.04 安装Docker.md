@@ -247,4 +247,4 @@ sudo rm -rf /var/lib/containerd
 
 ## 附录
 
-- [访问个人主页](https://www.rewi.cc/)
+- [访问个人主页](https://www.rewi.xyz/)
