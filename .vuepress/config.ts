@@ -1,7 +1,8 @@
-import { defineUserConfig } from "vuepress";
-import type { DefaultThemeOptions } from "vuepress";
-import recoTheme from "vuepress-theme-reco";
 import { themeConfig } from './config/index'
+import { defineUserConfig } from "vuepress";
+import recoTheme from "vuepress-theme-reco";
+import { viteBundler } from '@vuepress/bundler-vite'
+import { webpackBundler } from '@vuepress/bundler-webpack'
 
 export default defineUserConfig({
   title: '学习&交流-怿窗的博客',
@@ -67,5 +68,10 @@ export default defineUserConfig({
     },
   },
   theme: recoTheme(themeConfig),
+  bundler: viteBundler(),
+  // bundler: webpackBundler({
+  //   postcss: {},
+  //   vue: {},
+  // }),
   // debug: true,
 })
