@@ -84,7 +84,9 @@ export const themeConfig = {
   // 主题默认将 /.vuepress/components 下面的 .vue 组件进行了全局注册。
   // 如果我们文档项目存放在工程的子目录，比如 /docs 文件夹下，我们需要设置 themeConfig.componentsDir 为 ./docs/.vuepress/components。
   // componentsDir: './.vuepress/components',
-
+  // 注意，2.0.0-rc.5 之后的版本取消了 vue-previews 文件夹的能力，所有组件都可以放在文件夹 components 中声明。
+  // 主题默认将 /.vuepress/components 下面的 .vue 组件进行了全局注册，所以需要预览的组件请放在此目录下，注意：文件名不允许有 - _。
+  // 如果我们文档项目存放在工程的子目录，比如 /docs 文件夹下，我们需要设置 themeConfig.docsDir 为 ./docs。
   commentConfig: {
     type: 'valie',
     // options 与 1.x 的 valineConfig 配置一致
