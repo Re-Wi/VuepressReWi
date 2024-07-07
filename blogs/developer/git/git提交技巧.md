@@ -173,22 +173,6 @@ git reflog
 git log
 ```
 
-## git 仓库迁移
-
-> <https://blog.csdn.net/qq_42670703/article/details/123369326>
-
-```shell
-# 1. 随便找个文件夹，从原地址克隆一份裸版本库
-git clone --bare 旧的git地址
-# 2. 推送裸版本库到新的地址
-cd xxx.git
-git push --mirror 新的git地址
-# 3. 删掉xxx.git文件夹
-#删不删无所谓，只是说明它没有用了而已。
-#4. 代码迁移就成功了，接下来就可以使用新的地址了
-git clone 新的git地址
-```
-
 ## 强制提交
 
 ```shell
@@ -229,3 +213,197 @@ git branch -m master
 #最后，强制更新到主分支master
 git push -f origin master
 ```
+
+## git 仓库迁移不修改
+
+> <https://blog.csdn.net/qq_42670703/article/details/123369326>
+
+```shell
+# 1. 随便找个文件夹，从原地址克隆一份裸版本库
+git clone --bare 旧的git地址
+# 2. 推送裸版本库到新的地址
+cd xxx.git
+git push --mirror 新的git地址
+# 3. 删掉xxx.git文件夹
+#删不删无所谓，只是说明它没有用了而已。
+#4. 代码迁移就成功了，接下来就可以使用新的地址了
+git clone 新的git地址
+```
+
+## git 仓库迁移修改
+
+### git 修改当前项目仓库地址
+
+https://blog.csdn.net/halo1416/article/details/123566471
+
+方法 1：
+删除本地仓库当前关联的无效远程地址，再为本地仓库添加新的远程仓库地址
+
+```shell
+git remote -v                       // 查看git对应的远程仓库地址
+git remote rm origin                // 删除关联对应的远程仓库地址
+git remote -v                       // 查看是否删除成功，如果没有任何返回结果，表示OK
+git remote add origin "新的仓库地址" // 重新关联git远程仓库地址
+```
+
+方法 2：
+直接修改本地仓库所关联的远程仓库的地址
+
+```shell
+git remote                                                              // 查看远程仓库名称：origin
+git remote get-url origin                  // 查看远程仓库地址
+git remote set-url origin "新的仓库地址"    // ( 如果未设置ssh-key，此处仓库地址为 http://... 开头)
+```
+
+方法 3：
+修改 .git/config 配置文件
+
+```shell
+cd .git      // 进入.git目录
+vim config   // 修改config配置文件，快速找到remote "origin"下面的url并替换即可实现快速关联和修改
+```
+
+### 更新作者
+
+https://blog.csdn.net/qq_20515461/article/details/109270949
+
+#### 修改默认提交时的作者信息
+
+全局修改：本机所有 git 仓库均被改变
+
+```shell
+git config --global user.name "ReWi"
+git config --global user.email "RejoiceWindow@yeah.com"
+```
+
+当前仓库：只修改当前仓库
+
+```shell
+git config user.name "ReWi"
+git config user.email "RejoiceWindow@yeah.com"
+```
+
+#### 修改已经提交的作者信息
+
+https://blog.csdn.net/mocoe/article/details/84344411
+修改之前的任意一次提交
+
+```shell
+git log
+# amend命令只会修改最后一次commit的信息，之前的commit需要使用rebase
+git rebase -i HEAD~3
+# 要修改哪个，就把那行的pick改为edit，然后退出。例如想修改commit 1的author，光标移到第一个pick，按i键进入INSERT模式，把pick改为edit：
+edit 1 commit 1
+pick 2 commit 2
+pick 3 commit 3
+...
+-- INSERT --
+# 然后按esc键，退出INSERT模式，输入:wq退出，这时可以看到提示，可以修改commit 1的信息了：
+输入amend命令重置用户信息：
+git commit --amend --reset-author
+会出现commit 1的提交记录及注释内容，可进入INSERT模式修改注释，:wq退出。这时再查看提交历史，发现commit 1的author已经变成b(b@email.com)了，且是最新一次记录。
+通过continue命令回到正常状态：
+git rebase --continue
+```
+
+### 批量修改已经提交的作者和时间戳信息
+
+https://blog.csdn.net/qq_20515461/article/details/109270949
+
+```shell
+git filter-branch --env-filter '
+WRONG_EMAIL="ReWi@rewi.xyz"
+NEW_NAME="ReWi"
+NEW_EMAIL="RejoiceWindow@yeah.com"
+
+if [ "$GIT_AUTHOR_EMAIL" = "$WRONG_EMAIL" ]
+then
+     export GIT_AUTHOR_DATE="Thu Feb 18 14:00 2021 +0000"
+     export GIT_AUTHOR_NAME="$NEW_NAME"
+     export GIT_AUTHOR_EMAIL="$NEW_EMAIL"
+fi ' --tag-name-filter cat -- --branches --tags
+```
+
+## 更新提交记录的贡献者和时间戳
+
+https://www.cnblogs.com/fe-linjin/p/10814935.html
+
+```shell
+git log
+# git rebase -i HEAD~6
+git rebase -i master^^    // 假设我们当前在master分支
+# ^ 的用法：在 commit 的后面加一个或多个 ^ 号，可以把 commit 往回偏移，偏移的数量是 ^ 的数量。例如：master^^表示 当前master 指向的 commit 之前倒数第2个 commit
+# ~ 的用法：在 commit 的后面加上 ~ 号和一个数，可以把 commit 往回偏移，偏移的数量是 ~ 号后面的数。例如：master~2 表示的和master^^是一样操作。
+# 接下来可以操作的命令都在上图中显示了，我们要做的是编辑，并且要编辑的是第一行（它的排列顺序是一个正序排序，也就是说旧的commit信息在上面，新的commit在下面），我们将pick改为edit，vim操作大概是输入i -> 将pick改为edit -> esc -> :wq
+git commit --amend
+git rebase --continue
+```
+
+#### 批量修改已经提交的贡献者和时间戳信息
+
+```shell
+git filter-branch --env-filter '
+WRONG_EMAIL="ReWi@rewi.xyz"
+NEW_NAME="ReWi"
+NEW_EMAIL="RejoiceWindow@yeah.com"
+
+if [ "$GIT_COMMITTER_EMAIL" = "$WRONG_EMAIL" ]
+then
+    export GIT_COMMITTER_NAME="$NEW_NAME"
+    export GIT_COMMITTER_EMAIL="$NEW_EMAIL"
+    export GIT_COMMITTER_DATE="Thu Feb 18 14:00 2021 +0000"
+fi
+if [ "$GIT_AUTHOR_EMAIL" = "$WRONG_EMAIL" ]
+then
+    export GIT_AUTHOR_NAME="$NEW_NAME"
+    export GIT_AUTHOR_EMAIL="$NEW_EMAIL"
+    export GIT_AUTHOR_DATE="Thu Feb 18 14:00 2021 +0000"
+fi
+' --tag-name-filter cat -- --branches --tags
+```
+
+## 批量更改多个提交者和作者的信息
+
+```shell
+git filter-branch --env-filter '
+WRONG_EMAIL="ReWi@rewi.xyz"
+NEW_NAME="ReWi"
+NEW_EMAIL="RejoiceWindow@yeah.com"
+
+case "$GIT_COMMITTER_EMAIL" in
+    "$WRONG_EMAIL")
+        export GIT_COMMITTER_NAME="$NEW_NAME"
+        export GIT_COMMITTER_EMAIL="$NEW_EMAIL"
+        ;;
+    "old2@example.com")
+        export GIT_COMMITTER_NAME="New Name 2"
+        export GIT_COMMITTER_EMAIL="new2@example.com"
+        ;;
+esac
+
+case "$GIT_AUTHOR_EMAIL" in
+    "$WRONG_EMAIL")
+        export GIT_AUTHOR_NAME="$NEW_NAME"
+        export GIT_AUTHOR_EMAIL="$NEW_EMAIL"
+        ;;
+    "old2@example.com")
+        export GIT_AUTHOR_NAME="New Name 2"
+        export GIT_AUTHOR_EMAIL="new2@example.com"
+        ;;
+esac
+' --tag-name-filter cat -- --branches --tags
+```
+
+## 提交规范
+
+- feat：新功能（feature）
+- fix：修补 bug
+- docs：文档（documentation）
+- style：格式（不影响代码运行的变动,空格,格式化,等等）
+- refactor：重构（即不是新增功能，也不是修改 bug 的代码变动）
+- chore：构建过程或辅助工具的变动，对非 src 和 test 目录的修改
+- perf: 性能 (提高代码性能的改变)
+- test：增加测试或者修改测试
+- build: 影响构建系统或外部依赖项的更改(maven,gradle,npm 等等)
+- ci: 对 CI 配置文件和脚本的更改
+- revert: Revert a commit
