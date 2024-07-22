@@ -7,7 +7,7 @@ tags:
   - web
 categories:
   - developer
-  - programming language
+  - programming-language
 ---
 
 @[TOC](【python】使用 requests 进行 HTTP 的请求)

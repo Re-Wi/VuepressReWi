@@ -6,7 +6,7 @@ tags:
  - go
 categories:
  - developer
- - programming language
+ - programming-language
 ---
 
 ## go mod 使用方法

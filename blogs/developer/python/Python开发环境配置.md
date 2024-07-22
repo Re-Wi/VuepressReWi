@@ -6,7 +6,7 @@ tags:
  - python
 categories:
  - developer
- - programming language
+ - programming-language
 ---
 
 ## Linux下源码安装Python3详细步骤

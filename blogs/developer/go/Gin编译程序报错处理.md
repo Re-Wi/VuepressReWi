@@ -6,7 +6,7 @@ tags:
  - gin
 categories:
  - developer
- - programming language
+ - programming-language
 ---
 
 ## 解决golang编译提示dial tcp 172.217.160.113:443: connectex: A connection attempt failed

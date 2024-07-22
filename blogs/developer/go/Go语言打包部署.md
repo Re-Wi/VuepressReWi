@@ -6,7 +6,7 @@ tags:
  - Go
 categories:
  - developer
- - programming language
+ - programming-language
 ---
 
 ## golang在windows环境下build生成linux程序
