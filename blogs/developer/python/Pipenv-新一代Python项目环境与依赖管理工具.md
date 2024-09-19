@@ -1,3 +1,13 @@
+---
+title: Pipenv-新一代Python项目环境与依赖管理工具
+date: 2024-09-19 17:00:00
+tags:
+  - python
+categories:
+  - developer
+  - programming-language
+---
+
 # 使用 Pipenv
 
 - https://zhuanlan.zhihu.com/p/37581807

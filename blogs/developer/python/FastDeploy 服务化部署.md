@@ -1,3 +1,14 @@
+---
+title: FastDeploy 服务化部署
+date: 2024-09-19 17:00:00
+tags:
+  - python
+  - web
+categories:
+  - developer
+  - programming-language
+---
+
 # FastDeploy 服务化部署
 
 ## 文件夹准备
@@ -47,15 +58,15 @@ mv ppocr_keys_v1.txt models/rec_postprocess/1/
 wget https://gitee.com/paddlepaddle/PaddleOCR/raw/release/2.6/doc/imgs/12.jpg
 ```
 
-## CPU镜像
+## CPU 镜像
 
-CPU镜像仅支持Paddle/ONNX模型在CPU上进行服务化部署，支持的推理后端包括OpenVINO、Paddle Inference和ONNX Runtime
+CPU 镜像仅支持 Paddle/ONNX 模型在 CPU 上进行服务化部署，支持的推理后端包括 OpenVINO、Paddle Inference 和 ONNX Runtime
 
 ```shell
 sudo docker pull registry.baidubce.com/paddlepaddle/fastdeploy:1.0.7-cpu-only-21.10
 ```
 
-## 使用服务化Docker
+## 使用服务化 Docker
 
 ```shell
 sudo docker run -dit --net=host --name fastdeploy --shm-size="1g" -v $PWD:/ocr_serving registry.baidubce.com/paddlepaddle/fastdeploy:1.0.7-cpu-only-21.10 bash
@@ -64,7 +75,7 @@ sudo docker exec -it -u root fastdeploy bash
 
 ## 服务端的使用
 
-### 安装(在docker内)
+### 安装(在 docker 内)
 
 ```shell
 ldconfig
@@ -73,10 +84,11 @@ apt-get install libgl1
 
 ### 配置修改
 
-当前默认配置在GPU上运行， 如果要在CPU或其他推理引擎上运行。 需要修改models/runtime/config.pbtxt中配置
+当前默认配置在 GPU 上运行， 如果要在 CPU 或其他推理引擎上运行。 需要修改 models/runtime/config.pbtxt 中配置
 
 - 参考： https://blog.csdn.net/qq_30946821/article/details/131408693
 - https://github.com/PaddlePaddle/FastDeploy/blob/develop/serving/docs/zh_CN/model_configuration.md
+
 ```shell
 instance_group [
   {
@@ -88,7 +100,7 @@ instance_group [
     gpus: [0]
   }
 ]
- 
+
 改为
 instance_group [
   {
@@ -100,7 +112,7 @@ instance_group [
 ]
 ```
 
-### 启动服务端(在docker内)
+### 启动服务端(在 docker 内)
 
 ```shell
 fastdeployserver --model-repository=/ocr_serving/models
@@ -108,24 +120,29 @@ fastdeployserver --model-repository=/ocr_serving/models
 
 参数:
 
-model-repository(required): 整套模型streaming_pp_tts存放的路径.
-http-port(optional): HTTP服务的端口号. 默认: 8000. 本示例中未使用该端口.
-grpc-port(optional): GRPC服务的端口号. 默认: 8001.
+model-repository(required): 整套模型 streaming_pp_tts 存放的路径.
+http-port(optional): HTTP 服务的端口号. 默认: 8000. 本示例中未使用该端口.
+grpc-port(optional): GRPC 服务的端口号. 默认: 8001.
 metrics-port(optional): 服务端指标的端口号. 默认: 8002. 本示例中未使用该端口.
 
 # 客户端的使用
+
 ## 安装
+
 ```shell
 pip install tritonclient[all]
 ```
+
 ## 发送请求
+
 ```python
 # client.py
 ...
 ```
-# Serving可视化部署
 
-## 在容器中使用如下命令可以安装VisualDL
+# Serving 可视化部署
+
+## 在容器中使用如下命令可以安装 VisualDL
 
 ```shell
 python3 -m pip install --upgrade pip
@@ -137,7 +154,7 @@ python3 -m pip install --upgrade visualdl>=2.5.0 --root-user-action=ignore media
 使用命令
 
 接着在浏览器打开http://127.0.0.1:8080（如果浏览器和启动visualdl的机器不同，请替换为启动visualdl机器的ip），即可以看到FastDeploy
-Server的功能选项卡。
+Server 的功能选项卡。
 
 ```shell
 visualdl --host 0.0.0.0 --port 8090
@@ -145,8 +162,8 @@ visualdl --host 0.0.0.0 --port 8090
 
 ## 功能说明
 
-VisualDL的Serving可视化部署功能主要提供模型库载入和编辑、serving管理监控这两方面的功能。
-下面以examples目录为示例进行功能说明，可以先通过下列命令来获取示例所需要的资源并开启visualdl。
+VisualDL 的 Serving 可视化部署功能主要提供模型库载入和编辑、serving 管理监控这两方面的功能。
+下面以 examples 目录为示例进行功能说明，可以先通过下列命令来获取示例所需要的资源并开启 visualdl。
 
 ```shell
 git clone https://github.com/PaddlePaddle/FastDeploy.git
@@ -154,4 +171,4 @@ cd FastDeploy/examples
 visualdl --host 0.0.0.0 --port 8080
 ```
 
-进入FastDeployServer的功能选项卡后，
+进入 FastDeployServer 的功能选项卡后，

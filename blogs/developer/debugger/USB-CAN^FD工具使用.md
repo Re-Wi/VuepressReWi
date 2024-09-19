@@ -20,10 +20,11 @@ categories:
 
 # 2. 在安装目录下打开软件 PcanView
 
-<img src="./images/PcanView001.PNG" width="600" />
+[PcanView001](./images/PcanView001.PNG)
 
 # 3. 配置自定义波特率
 
-<img src="./images/PcanView002.PNG" width="600" />
-<img src="./images/PcanView003.PNG" width="600" />
+[PcanView002](./images/PcanView002.PNG)
+[PcanView003](./images/PcanView003.PNG)
+
 连接之后点击相应按钮就可以观察数据了
