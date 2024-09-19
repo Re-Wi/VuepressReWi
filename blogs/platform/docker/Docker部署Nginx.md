@@ -55,7 +55,7 @@ sudo docker network create NginxNet
 - 网页目录：/usr/share/nginx/html
 
 ```shell
-sudo docker run -d --name nginx --network NginxNet -p 6080:80 -p 8888:8888 -p 3688:3688 -v /home/www/nginx/conf/nginx.conf:/etc/nginx/nginx.conf -v /home/www/nginx/conf/conf.d:/etc/nginx/conf.d -v /home/www/nginx/html:/usr/share/nginx/html -v /home/www/nginx/log:/var/log/nginx --restart=always nginx
+sudo docker run -d --name nginx --network NginxNet -p 6080:6080 -p 6088:6088 -p 8001:8001 -p 8880:8880 -p 8888:8888 -p 3680:3680 -p 3688:3688 -v /home/www/nginx/conf/nginx.conf:/etc/nginx/nginx.conf -v /home/www/nginx/conf/conf.d:/etc/nginx/conf.d -v /home/www/nginx/html:/usr/share/nginx/html -v /home/www/nginx/log:/var/log/nginx --restart=always nginx
 ```
 
 ## 4. 验证是否成功

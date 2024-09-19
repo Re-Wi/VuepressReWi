@@ -2,17 +2,23 @@
 title: 服务器Ubuntu 22.04 快速安装、更新、卸载 Docker
 date: 2023/09/19 16:00:00
 tags:
- - 程序安装
- - ubuntu
+  - 程序安装
+  - ubuntu
 categories:
- - docker
- - virtual-platform
+  - docker
+  - virtual-platform
 hideComments: false
 ---
 
 ## 目录
 
 [[toc]]
+
+---
+
+_下面步骤有可能已经不再适用，建议优先访问官网，获取最新步骤_
+
+---
 
 ## 1. 进入官网，获取最新安装信息
 
@@ -22,17 +28,20 @@ hideComments: false
 
 :::: code-group
 ::: code-group-item 输入
+
 ```shell
 for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
 ```
+
 :::
 ::: code-group-item 输出
+
 ```text
 正在读取软件包列表... 完成
 
 正在分析软件包的依赖关系树... 完成
 
-正在读取状态信息... 完成                 
+正在读取状态信息... 完成
 
 软件包 docker.io 未安装，所以不会被卸载
 。。。
@@ -51,6 +60,7 @@ for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do
 
 升级了 0 个软件包，新安装了 0 个软件包，要卸载 0 个软件包，有 8 个软件包未被升级。
 ```
+
 :::
 ::::
 
@@ -58,20 +68,21 @@ for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do
 
 可以选择：
 
-  [桌面版安装 ](https://docs.docker.com/desktop/install/linux-install/)
+[桌面版安装 ](https://docs.docker.com/desktop/install/linux-install/)
 
-  [Apt仓库（命令行）安装](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
+[Apt 仓库（命令行）安装](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
 
-  [手动（离线）安装](https://docs.docker.com/engine/install/ubuntu/#install-from-a-package)
-  
-  [脚本安装](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
+[手动（离线）安装](https://docs.docker.com/engine/install/ubuntu/#install-from-a-package)
 
-## <a name="my-section4"></a>4. Install using the Apt repository（Apt仓库 "命令行" 安装 步骤）
+[脚本安装](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
 
-### 4.1 Set up Docker's Apt repository（设置Apt仓库）
+## <a name="my-section4"></a>4. Install using the Apt repository（Apt 仓库 "命令行" 安装 步骤）
+
+### 4.1 Set up Docker's Apt repository（设置 Apt 仓库）
 
 :::: code-group
 ::: code-group-item 输入
+
 ```shell
 # Add Docker's official GPG key:
 sudo apt-get update
@@ -87,11 +98,14 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 ```
+
 :::
 ::: code-group-item 输出
+
 ```text
 too much
 ```
+
 :::
 ::::
 
@@ -99,11 +113,14 @@ too much
 
 :::: code-group
 ::: code-group-item 安装最新版
+
 ```shell
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
+
 :::
 ::: code-group-item 指定版本
+
 ```shell
 # To install a specific version of Docker Engine, start by listing the available versions in the repository:
 # List the available versions:
@@ -116,6 +133,7 @@ VERSION_STRING=5:24.0.0-1~ubuntu.22.04~jammy
 sudo apt-get install docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io docker-buildx-plugin docker-compose-plugin
 ...
 ```
+
 :::
 ::::
 
@@ -123,17 +141,20 @@ sudo apt-get install docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING con
 
 :::: code-group
 ::: code-group-item 输入
+
 ```shell
 sudo docker run hello-world
 ```
+
 :::
 ::: code-group-item 输出
+
 ```text
 Unable to find image 'hello-world:latest' locally
 
 latest: Pulling from library/hello-world
 
-719385e32844: Pull complete 
+719385e32844: Pull complete
 
 Digest: sha256:4f53e2564790c8e7856ec08e384732aa38dc43c52f02952483e3f003afbf23db
 
@@ -181,27 +202,34 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 
 ```
+
 :::
 ::::
 
-## 5. Upgrade Docker Engine（更新Docker）
+## 5. Upgrade Docker Engine（更新 Docker）
+
 To upgrade Docker Engine, follow step 2 of the installation instructions, choosing the new version you want to install.（指定版本安装，或 再次安装最新版）（见 [4. 安装步骤](#my-section4)）
 
-## 6. Uninstall Docker Engine（卸载Docker）
+## 6. Uninstall Docker Engine（卸载 Docker）
+
 ### 6.1 Uninstall the Docker Engine, CLI, containerd, and Docker Compose packages:（卸载包）
+
 :::: code-group
 ::: code-group-item 输入
+
 ```shell
 sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras
 ```
+
 :::
 ::: code-group-item 输出
+
 ```text
 正在读取软件包列表... 完成
 
 正在分析软件包的依赖关系树... 完成
 
-正在读取状态信息... 完成                 
+正在读取状态信息... 完成
 
 下列软件包是自动安装的并且现在不需要了：
 
@@ -226,6 +254,7 @@ sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin do
 正在清除 containerd.io (1.6.24-1) 的配置文件 ...
 
 ```
+
 :::
 ::::
 
@@ -233,15 +262,19 @@ sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin do
 
 :::: code-group
 ::: code-group-item 输入
+
 ```shell
 sudo rm -rf /var/lib/docker
 sudo rm -rf /var/lib/containerd
 ```
+
 :::
 ::: code-group-item 输出
+
 ```text
 
 ```
+
 :::
 ::::
 
