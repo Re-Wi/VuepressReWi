@@ -24,15 +24,15 @@ bannerBrand: # bannerBrand 模块的配置
   description: 一款简洁的 vuepress 博客 & 文档 主题。
   tagline: RejoiceWindow 。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
   buttons:
-    - { text: 主页, link: '/' }
-    - { text: 英文, link: '/en/', type: 'plain' }
-    - { text: 打赏, link: '/blogs/person/donate' }
+    - { text: 主页, link: "/" }
+    - { text: 英文, link: "/en/", type: "plain" }
+    - { text: 打赏, link: "/blogs/person/donate" }
   socialLinks: # 社交地址
-    - { icon: 'BrandGithub', link: 'https://github.com/Re-Wi' }
+    - { icon: "BrandGithub", link: "https://github.com/Re-Wi" }
 blog: # blog 模块的配置
   socialLinks: # 社交地址
-    - { icon: 'LogoGithub', link: 'https://github.com/Re-Wi' }
-    - { icon: 'LogoGitee', link: 'https://gitee.com/re-wi' }
+    - { icon: "LogoGithub", link: "https://github.com/Re-Wi" }
+    - { icon: "LogoGitee", link: "https://gitee.com/re-wi" }
 footer: # 底部模块的配置
   record: 域名备案文案
   recordLink: https://rewi.cc/

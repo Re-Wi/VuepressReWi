@@ -2,15 +2,15 @@
 title: XXX
 date: 2023/09/19 16:00:00
 tags:
- - XXX
- - XXX
+  - XXX
+  - XXX
 categories:
- - XXX
- - XXX
+  - XXX
+  - XXX
 # 设置多个密码
-password: 
- - 5cde5596ace9b1e212ab3ace1f083815
- - a5db2fd9def8a592756d4ca2b5301c20
+password:
+  - 5cde5596ace9b1e212ab3ace1f083815
+  - a5db2fd9def8a592756d4ca2b5301c20
 hideComments: false
 ---
 
@@ -22,17 +22,20 @@ hideComments: false
 
 [Portainer Community Edition (CE)](https://docs.docker.com/engine/install/ubuntu/)
 
-
 :::: code-group
 ::: code-group-item 输入
+
 ```shell
 const foo = 'foo'
 ```
+
 :::
 ::: code-group-item 输出
+
 ```text
 const bar = 'bar'
 ```
+
 :::
 ::::
 
@@ -42,4 +45,4 @@ const bar = 'bar'
 
 ## 附录
 
-- [访问个人主页](https://www.rewi.cc/)
+- [访问个人主页](https://www.rewi.xyz/)

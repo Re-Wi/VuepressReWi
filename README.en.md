@@ -1,4 +1,3 @@
-
 ## 快速开始
 
 **npx**
@@ -35,7 +34,7 @@ yarn add vuepress@next vuepress-theme-reco@next
 
 ## **_ReWi 怿窗の博客_**
 
-## 把项目从github上克隆下来
+## 把项目从 github 上克隆下来
 
 ```shell
 git clone git@github.com:Re-Wi/VuepressReWi.git
@@ -50,7 +49,7 @@ cd VuepressReWi
 ## 安装依赖
 
 ```shell
-yarn  
+yarn
 # or
 npm install
 # or
@@ -60,7 +59,7 @@ cnpm install
 ## 启动项目
 
 ```shell
-yarn dev 
+yarn dev
 # or
 npm run dev
 # or
@@ -72,7 +71,7 @@ cnpm run dev
 ## 生成静态文件
 
 ```shell
-yarn build 
+yarn build
 # or
 npm run build
 # or
@@ -82,7 +81,7 @@ cnpm run build
 ## 运行发布命令:右键，Git Bush Here
 
 ```shell
-yarn deploy 
+yarn deploy
 # or
 npm run deploy
 # or
@@ -92,7 +91,7 @@ cnpm run deploy
 ## 提交代码
 
 ```shell
-yarn push 
+yarn push
 # or
 npm run push
 # or

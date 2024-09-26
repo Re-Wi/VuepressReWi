@@ -2,16 +2,16 @@
 title: dart开发参考
 date: 2023-02-27 00:00:00
 tags:
- - 编程技巧
- - dart
+  - 编程技巧
+  - dart
 categories:
- - developer
- - programming-language
+  - developer
+  - programming-language
 ---
 
 ## Dart 类型转换
 
-- [Dart String转数值int或double](https://blog.csdn.net/mqdxiaoxiao/article/details/102745734)
+- [Dart String 转数值 int 或 double](https://blog.csdn.net/mqdxiaoxiao/article/details/102745734)
 - [Dart 类型转换](https://blog.csdn.net/u014651417/article/details/119268593)
 
 ```dart
