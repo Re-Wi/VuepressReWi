@@ -1,0 +1,29 @@
+{
+  "name": "vuepress-rewi",
+  "version": "0.0.0",
+  "commit_m": "更新|新增 博客文档",
+  "description": "怿窗の博客",
+  "repository": "git@github.com:Re-Wi/VuepressReWi.git",
+  "author": "ReWi <RejoiceWindow@yeah.net>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev . --temp .temp  --cache .cache --clean-temp --clean-cache --debug",
+    "start": "vuepress dev . --temp .temp --cache .cache",
+    "build": "vuepress build . --temp .temp --cache .cache --clean-temp --clean-cache",
+    "deploy": "bash scripts/deploy.sh",
+    "push": "bash scripts/push.sh"
+  },
+  "keywords": [
+    "RejoiceWindow",
+    "ReWi",
+    "怿窗",
+    "VuepressReWi"
+  ],
+  "devDependencies": {
+    "vue": "^3.4.27",
+    "vuepress": "2.0.0-rc.13",
+    "vuepress-theme-reco": "2.0.0-rc.15",
+    "@vuepress/bundler-vite": "2.0.0-rc.13",
+    "@vuepress/bundler-webpack": "2.0.0-rc.13"
+  }
+}
