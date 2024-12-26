@@ -3,9 +3,8 @@ title: Docker部署Nginx
 date: 2023/09/20 21:00:00
 tags:
   - 项目部署
-  - nginx
 categories:
-  - backend
+  - nginx
   - docker
 ---
 

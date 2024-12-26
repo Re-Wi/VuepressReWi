@@ -152,3 +152,14 @@ locale
 # 使用 source 命令
 source XXX.sh
 ```
+
+# FAQ
+
+## libGL.so.1: cannot open shared object file: No such file or directory
+
+> https://blog.csdn.net/qq_50195602/article/details/124188467
+
+```shell
+apt-get install ffmpeg libsm6 libxext6  -y
+apt-get update && apt-get install libgl1
+```

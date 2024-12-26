@@ -7,7 +7,7 @@ categories:
   - Git
 ---
 
-练习：https://learngitbranching.js.org/?locale=zh_CN&NODEMO=
+练习：<https://learngitbranching.js.org/?locale=zh_CN&NODEMO=>
 
 ## 使用 shell 脚本提取 package.json 版本
 
@@ -186,7 +186,7 @@ git push -u -f
 
 ## Git 清除贡献者信息和历史提交记录
 
-> https://blog.csdn.net/Liu_Wd/article/details/120910899
+> <https://blog.csdn.net/Liu_Wd/article/details/120910899>
 > 注意：历史记录清除后无法回滚。目前这个仓库算是一个新的仓库，以后所有的修改只需要在现在基础上修改。
 > 总结：大概步骤就是把 master 分支复制，删除原有分支，用新的分支覆盖旧分支。从而完成分支替换，清除历史记录。
 
@@ -232,7 +232,7 @@ git clone 新的git地址
 
 ### git 修改当前项目仓库地址
 
-https://blog.csdn.net/halo1416/article/details/123566471
+<https://blog.csdn.net/halo1416/article/details/123566471>
 
 方法 1：
 删除本地仓库当前关联的无效远程地址，再为本地仓库添加新的远程仓库地址
@@ -263,7 +263,7 @@ vim config   // 修改config配置文件，快速找到remote "origin"下面的u
 
 ### 更新作者
 
-https://blog.csdn.net/qq_20515461/article/details/109270949
+<https://blog.csdn.net/qq_20515461/article/details/109270949>
 
 #### 修改默认提交时的作者信息
 
@@ -283,7 +283,7 @@ git config user.email "RejoiceWindow@yeah.com"
 
 #### 修改已经提交的作者信息
 
-https://blog.csdn.net/mocoe/article/details/84344411
+<https://blog.csdn.net/mocoe/article/details/84344411>
 修改之前的任意一次提交
 
 ```shell
@@ -306,7 +306,7 @@ git rebase --continue
 
 ### 批量修改已经提交的作者和时间戳信息
 
-https://blog.csdn.net/qq_20515461/article/details/109270949
+<https://blog.csdn.net/qq_20515461/article/details/109270949>
 
 ```shell
 git filter-branch --env-filter '
@@ -324,7 +324,7 @@ fi ' --tag-name-filter cat -- --branches --tags
 
 ## 更新提交记录的贡献者和时间戳
 
-https://www.cnblogs.com/fe-linjin/p/10814935.html
+<https://www.cnblogs.com/fe-linjin/p/10814935.html>
 
 ```shell
 git log
@@ -392,6 +392,14 @@ esac
 ' --tag-name-filter cat -- --branches --tags
 ```
 
+## 本地项目迁移
+
+```bash
+git remote set-url origin ssh://git@XXX.git
+git push -u origin --all
+git push origin --tags
+```
+
 ## 提交规范
 
 - feat：新功能（feature）
@@ -405,3 +413,6 @@ esac
 - build: 影响构建系统或外部依赖项的更改(maven,gradle,npm 等等)
 - ci: 对 CI 配置文件和脚本的更改
 - revert: Revert a commit
+- `types` 类型定义文件更改
+- `workflow` 工作流改进
+- `wip` 开发中
