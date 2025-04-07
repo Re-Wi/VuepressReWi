@@ -24,13 +24,12 @@ categories:
 # 1）centos 安装：
 yum install supervisor
 
-# 2）ubuntu安装：
+# 2）ubuntu 安装：
 apt-get install supervisor
 # （如果安装失败检查镜像源，替换最新的更新下然后再安装）
 
 # 3）masOS安装：
 brew install supervisor
-
 ```
 
 ### Supervisor 配置
@@ -42,23 +41,23 @@ brew install supervisor
 files = /etc/supervisor/conf.d/*.conf
 ```
 
-启动 supervisor 服务
+### 启动 supervisor 服务
 
-```
+```bash
 supervisord -c /etc/supervisor/supervisord.conf
 ```
 
 > 以 ubuntu 为例，在/etc/supervisor/conf.d 文件下添加`KitReWi.conf`文件
 
-编辑文件
+### 编辑文件
 
 ```shell
 cd /etc/supervisor/conf.d/
 nano KitReWi.conf
 ```
 
-输入内容
-简单说明下：
+### 输入内容简单说明下
+
 program：项目名称
 command 执行命令 使用 go build -o KitReWi 编译后文件路径
 

@@ -10,7 +10,7 @@ categories:
 
 # 安装
 
-- 参考： https://github.com/Sanster/IOPaint
+- 参考： <https://github.com/Sanster/IOPaint>
 
 ```shell
 python3 -m pip install iopaint -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
@@ -34,15 +34,15 @@ iopaint start --enable-interactive-seg --interactive-seg-device=cuda
 
 ## 模糊图像修复插件使用
 
-- https://blog.csdn.net/weixin_44726183/article/details/138667937
+- <https://blog.csdn.net/weixin_44726183/article/details/138667937>
 
-  安装依赖
+## 安装依赖
 
 ```shell
 pip3 install realesrgan
 ```
 
-运行
+## 运行
 
 ```shell
 iopaint start --enable-realesrgan --realesrgan-model RealESRGAN_x4plus --realesrgan-device cpu --model=lama --device=cpu --host=0.0.0.0 --port=8080

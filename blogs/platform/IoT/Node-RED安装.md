@@ -9,7 +9,7 @@ categories:
 
 @[TOC](Node-RED安装)
 
-> https://nodered.org/docs/getting-started/docker
+> <https://nodered.org/docs/getting-started/docker>
 
 # Running under Docker
 
@@ -57,9 +57,9 @@ telnet连接设备：node-red-contrib-telnet-client
 
 # FAQ(Frequently Asked Questions)
 
-## npm 报错：request to https://registry.npm.taobao.org failed, reason certificate has expired
+## npm 报错：request to <https://registry.npm.taobao.org> failed, reason certificate has expired
 
-> https://blog.csdn.net/maoge_666/article/details/136038003
+> <https://blog.csdn.net/maoge_666/article/details/136038003>
 
 ```shell
 npm config set registry https://registry.npmmirror.com

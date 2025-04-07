@@ -20,11 +20,11 @@ ${currentDate:date('yyyy-MM-dd HH:mm:ss')}
 
 ## 3. 自定义 头文件 防止重定义格式 不包括文件夾
 
-> 参考：https://stackoverflow.com/questions/12975841/how-to-have-an-include-guard-symbol-in-eclipse-with-an-uppercase-file-path
+> 参考：<https://stackoverflow.com/questions/12975841/how-to-have-an-include-guard-symbol-in-eclipse-with-an-uppercase-file-path>
 
-> http://hk.voidcc.com/question/p-kbvwqklw-wp.html
+> <http://hk.voidcc.com/question/p-kbvwqklw-wp.html>
 
-> 如何去掉最后的 H* 的下划线 *
+> 如何去掉最后的 H*的下划线*
 
 - 文件路径：`<workspace folder>\.metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.cdt.ui.prefs`
 - 在文件第三行插入如下内容：

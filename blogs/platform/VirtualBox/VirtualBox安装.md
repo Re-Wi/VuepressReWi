@@ -73,6 +73,6 @@ VirtualBox 和 VMware Workstation Pro 都是强大的虚拟化软件，它们允
 
 # 安装
 
-官网下载：https://www.virtualbox.org/wiki/Downloads
+官网下载：<https://www.virtualbox.org/wiki/Downloads>
 
 # 选择需要的平台，并根据官网步骤进行即可
