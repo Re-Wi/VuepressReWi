@@ -5,7 +5,7 @@ set -e
 
 # 配置参数
 DIST_DIR=".vuepress/dist"        # VuePress 构建输出目录
-GITHUB_REPO="git@github.com:RejoiceWindow/vuepress-rewi_dist.git" # GitHub 仓库本地克隆目录
+GITHUB_REPO="git@github.com:RejoiceWindow/vuepress-rewi_dist.git" # GitHub 仓库
 BRANCH="mater"                    # GitHub 分支名称，默认为 main
 
 
@@ -14,14 +14,9 @@ echo "正在构建 VuePress 文档..."
 
 npm run build
 
-if [ $? -ne 0 ]; then
-  echo "VuePress 构建失败，请检查错误日志。"
-  exit 1
-fi
-
 # 检查 VuePress 项目是否存在
-if [ ! -d "$VUEPRESS_DIR" ]; then
-  echo "VuePress 项目目录不存在: $VUEPRESS_DIR"
+if [ ! -d "$DIST_DIR" ]; then
+  echo "VuePress 项目目录不存在: $DIST_DIR"
   exit 1
 fi
 
