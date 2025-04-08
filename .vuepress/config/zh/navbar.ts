@@ -11,7 +11,7 @@ export const navbar = [
       { text: '赚钱邀请码', link: '/docs/AddressBook/InvitationCode/' },
     ]
   },
-  { text: '分享怿窗', link: '/docs/ShareReWi/', icon: 'Fire' },
+  { text: '嵌入式怿窗', link: 'https://em.rewi.xyz', icon: 'Fire' },
   { text: '留言板', link: '/docs/message-board', icon: 'RequestQuote' },
   {
     text: 'Shortcut',

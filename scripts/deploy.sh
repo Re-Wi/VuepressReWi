@@ -7,7 +7,8 @@ set -e
 DIST_DIR=".vuepress/dist"        # VuePress 构建输出目录
 GITHUB_REPO="git@github.com:RejoiceWindow/vuepress-rewi_dist.git" # GitHub 仓库
 BRANCH="mater"                    # GitHub 分支名称，默认为 main
-
+PACKAGE_FILE="'../../package.json'" # 项目的 package.json 文件路径
+VERCEL_HOST="www.rewi.xyz"
 
 # 构建 VuePress 文档 # 生成静态文件
 echo "正在构建 VuePress 文档..."
@@ -25,12 +26,12 @@ cd "$DIST_DIR" || exit 1
 
 
 # 如果是发布到自定义域名
-# echo 'www.yourwebsite.com' > CNAME
+echo "$VERCEL_HOST" > CNAME
 
 # deploy to github pages
-echo "$GITHUB_REPO" > CNAME
+# echo "$GITHUB_REPO" > CNAME
 
-VERSION=`node -p -e "require('../../package.json').version"`
+VERSION=`node -p -e "require($PACKAGE_FILE).version"`
 
 # if [ -z "$GITHUB_TOKEN" ]; then
 #   msg=${VERSION}': deploy'
