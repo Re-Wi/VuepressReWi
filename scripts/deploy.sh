@@ -3,17 +3,37 @@
 # 确保脚本抛出遇到的错误
 set -e
 
-# 生成静态文件
+# 配置参数
+DIST_DIR=".vuepress/dist"        # VuePress 构建输出目录
+GITHUB_REPO="git@github.com:RejoiceWindow/vuepress-rewi_dist.git" # GitHub 仓库本地克隆目录
+BRANCH="mater"                    # GitHub 分支名称，默认为 main
+
+
+# 构建 VuePress 文档 # 生成静态文件
+echo "正在构建 VuePress 文档..."
+
 npm run build
 
+if [ $? -ne 0 ]; then
+  echo "VuePress 构建失败，请检查错误日志。"
+  exit 1
+fi
+
+# 检查 VuePress 项目是否存在
+if [ ! -d "$VUEPRESS_DIR" ]; then
+  echo "VuePress 项目目录不存在: $VUEPRESS_DIR"
+  exit 1
+fi
+
 # 进入生成的文件夹
-cd .vuepress/dist
+cd "$DIST_DIR" || exit 1
+
 
 # 如果是发布到自定义域名
 # echo 'www.yourwebsite.com' > CNAME
 
 # deploy to github pages
-echo 'git@github.com:RejoiceWindow/vuepress-rewi_dist.git' > CNAME
+echo "$GITHUB_REPO" > CNAME
 
 VERSION=`node -p -e "require('../../package.json').version"`
 
@@ -21,8 +41,8 @@ VERSION=`node -p -e "require('../../package.json').version"`
 #   msg=${VERSION}': deploy'
 #   githubUrl=git@github.com:RejoiceWindow/vuepress-rewi_dist.git
 # else
-msg=${VERSION}'：来自github actions的自动部署'
-githubUrl=git@github.com:RejoiceWindow/vuepress-rewi_dist.git
+msg=${VERSION}'：来自本地的自动部署'
+githubUrl="$GITHUB_REPO"
 # git config --global user.name "RejoiceWindow"
 # git config --global user.email "ziranzhimi@yeah.net"
 # fi
@@ -42,4 +62,4 @@ git push -f $githubUrl master # 推送到github master分支
 # git push -f git@github.com:USERNAME/<REPO>.git master:gh-pages
 
 cd -
-rm -rf .vuepress/dist
+rm -rf "$DIST_DIR"
