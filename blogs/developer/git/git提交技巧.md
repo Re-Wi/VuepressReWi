@@ -402,17 +402,78 @@ git push origin --tags
 
 ## 提交规范
 
-- feat：新功能（feature）
-- fix：修补 bug
-- docs：文档（documentation）
-- style：格式（不影响代码运行的变动,空格,格式化,等等）
-- refactor：重构（即不是新增功能，也不是修改 bug 的代码变动）
-- chore：构建过程或辅助工具的变动，对非 src 和 test 目录的修改
-- perf: 性能 (提高代码性能的改变)
-- test：增加测试或者修改测试
-- build: 影响构建系统或外部依赖项的更改(maven,gradle,npm 等等)
-- ci: 对 CI 配置文件和脚本的更改
-- revert: Revert a commit
-- `types` 类型定义文件更改
-- `workflow` 工作流改进
-- `wip` 开发中
+["feat"]="新功能（feature）"
+["fix"]="修复bug"
+["docs"]="文档（documentation）"
+["style"]="格式（不影响代码运行的结果，如缩进、空格等）"
+["refactor"]="重构（即不是新增功能，也不是修复bug）"
+["test"]="增加测试、修改测试"
+["chore"]="构建过程或辅助工具的变动"
+["perf"]="性能 (提高代码性能的改变)"
+["build"]="影响构建系统或外部依赖项的更改(maven,gradle,npm 等等)"
+["ci"]="对 CI 配置文件和脚本的更改"
+["revert"]="Revert a commit"
+["types"]="类型定义文件更改"
+["workflow"]="工作流改进"
+["wip"]="工作进行中（Work In Progress）"
+["config"]="配置文件的改动"
+["locale"]="国际化/本地化的改动"
+["security"]="安全相关的改动"
+
+提交信息通常采用以下格式：
+
+```text
+<type>(<scope>): <subject>
+```
+
+`<type>`：提交类型（如 `feat`、`fix` 等）。
+`<scope>`（可选）：影响范围（如模块名、组件名等）。
+`<subject>`：简短描述提交内容。
+
+示例：
+
+```text
+feat(user): 添加用户注册功能
+```
+
+### 自动生成 CHANGELOG
+
+(1) standard-version
+standard-version 是一个基于 Conventional Commits 规范的工具，可以自动生成 CHANGELOG 文件并更新版本号。
+
+(2) conventional-changelog-cli
+conventional-changelog-cli 是一个专门用于生成 CHANGELOG 的工具，支持多种格式和模板。
+安装：
+
+```bash
+npm install -g conventional-changelog-cli
+```
+
+使用：
+运行以下命令生成 CHANGELOG：
+
+```bash
+conventional-changelog -p angular -i CHANGELOG.md -s
+```
+
+`-p angular`：指定提交规范类型（如 Angular、Atom 等）。
+`-i` CHANGELOG.md：指定输出文件。
+`-s`：将新内容追加到现有 CHANGELOG 文件中。
+
+示例输出：
+与 standard-version 类似，会根据提交信息生成 CHANGELOG。
+
+```markdown
+# Changelog
+
+## [1.0.0](https://github.com/your-repo/compare/v0.1.0...v1.0.0) (2023-10-01)
+
+### Features
+- feat(user): 添加用户注册功能 ([commit-hash](https://github.com/your-repo/commit/hash))
+
+### Bug Fixes
+- fix(auth): 修复用户登录失败问题 ([commit-hash](https://github.com/your-repo/commit/hash))
+```
+
+(3) git-chglog
+git-chglog 是一个轻量级的工具，专注于从 Git 提交历史生成 CHANGELOG。
